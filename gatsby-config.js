@@ -6,11 +6,20 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-styletron",
+      options: {
+        // You can pass options to Styletron.
+        // Prefix all generated classNames:
+        prefix: "_",
       },
     },
     `gatsby-transformer-sharp`,
