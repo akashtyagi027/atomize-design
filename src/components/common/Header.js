@@ -4,7 +4,7 @@ import React from "react"
 import { Div, Text, Image, Button } from "atomize"
 import WebsiteContainer from "./WebsiteContainer"
 import CustomContainer from "./CustomContainer"
-import Logo from "../../images/Default.png"
+import Logo from "../../images/icons/Default.png"
 
 const Header = () => (
   <Div h="4rem" className="header" pos="fixed" w="100%" top="0">

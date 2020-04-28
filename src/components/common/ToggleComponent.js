@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Div, Text, Image, Button } from "atomize"
-import Sketch from "../../images/Sketch.svg"
-import Figma from "../../images/Figma.svg"
+import Sketch from "../../images/icons/Sketch.svg"
+import Figma from "../../images/icons/Figma.svg"
 
 const btnContainer = document.querySelector(".toggle-buttons")
 const buttons = document.getElementsByClassName("btn-toggle")
