@@ -7,7 +7,7 @@ import CustomContainer from "./CustomContainer"
 import Logo from "../../images/icons/Default.png"
 
 const Header = () => (
-  <Div h="4rem" className="header" pos="fixed" w="100%" top="0">
+  <Div h="4rem" className="header" pos="fixed" w="100%" top="0" zIndex="4">
     <WebsiteContainer>
       <CustomContainer>
         <Div
