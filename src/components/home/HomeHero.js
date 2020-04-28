@@ -10,17 +10,17 @@ import Scalable from "../../images/icons/Scalable.svg"
 
 const heroPoints = [
   {
-    image: { Modular },
+    image: Modular,
     heading: "Modular",
     text: "Combine symbols to create multiple UI components",
   },
   {
-    image: { Customizable },
+    image: Customizable,
     heading: "Customizable",
     text: "Shared styles and Symbols can be customized easily.",
   },
   {
-    image: { Scalable },
+    image: Scalable,
     heading: "Scalable",
     text: "Quickly scale your design while maintaining consistency",
   },
