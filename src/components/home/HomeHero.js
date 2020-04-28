@@ -63,14 +63,14 @@ export default class HomeHero extends Component {
                 d="flex"
                 justify="space-between"
                 textAlign="left"
-                p={{ y: "2.5rem", x: "2rem" }}
+                p={{ y: "2.5rem", l: "2rem" }}
                 border={{ t: "1px solid", b: "1px solid" }}
                 borderColor="#E1E4E8"
-                m={{ b: "10rem", x: "-1rem" }}
+                m={{ x: "-1rem" }}
               >
                 {heroPoints.map((data, id) => {
                   return (
-                    <Div d="flex" key={id} maxW="18rem">
+                    <Div d="flex" key={id} maxW="18rem" align="center">
                       <Image src={data.image} h="1.5rem" w="auto" />
                       <Div m={{ l: "2rem" }}>
                         <Text
