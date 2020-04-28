@@ -1,19 +1,31 @@
 import React, { Component } from "react"
 import { Div, Text, Image, Button } from "atomize"
+import Sketch from "../../images/Sketch.svg"
+import Figma from "../../images/Figma.svg"
 
 const btnContainer = document.querySelector(".toggle-buttons")
-const buttons = document.getElementsByClassName("btn")
+const buttons = document.getElementsByClassName("btn-toggle")
 
-for (var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function () {
-    let current = document.getElementsByClassName("active")
-    current[0].className = current[0].className.replace(" active", "")
-    this.className += " active"
-  })
-}
+// for (var i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener("click", function () {
+//     let current = document.getElementsByClassName("active")
+//     current[0].className = current[0].className.replace(" active", "")
+//     this.className += " active"
+//   })
+// }
 export default class ToggleComponent extends Component {
   toggle = e => {
     this.props.toggleId(e.target.id)
+  }
+
+  color = () => {
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active")
+        current[0].className = current[0].className.replace(" active", "")
+        this.className += " active"
+      })
+    }
   }
 
   render() {
@@ -27,50 +39,36 @@ export default class ToggleComponent extends Component {
         p="4px"
         bg="light"
         rounded="xl"
-        maxH="40px"
         className="toggle-buttons"
       >
         <Button
           d="flex"
-          p={{ x: "1rem", y: ".375rem" }}
+          p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
           cursor="pointer"
           id="sketch"
           onClick={this.toggle}
+          onMouseDown={this.color}
+          onTouchStart={this.color}
           bg="white"
-          h="2rem"
-          textColor="#d3d3d3"
           textSize="caption"
           textWeight="bold"
-          className="btn active"
-          prefix={
-            <Image
-              m={{ r: ".5rem" }}
-              src="../images/Sketch.svg"
-              h="20px"
-              w="auto"
-            />
-          }
+          className="btn-toggle active"
+          prefix={<Image m={{ r: ".5rem" }} src={Sketch} h="20px" w="auto" />}
         >
           Sketch
         </Button>
         <Button
           d="flex"
-          p={{ x: "1rem", y: ".375rem" }}
+          p={{ l: ".9rem", r: "1rem", y: ".375rem" }}
           cursor="pointer"
           id="figma"
-          h="2rem"
           onClick={this.toggle}
+          onMouseDown={this.color}
+          onTouchStart={this.color}
           textSize="caption"
           textWeight="bold"
-          className="btn"
-          prefix={
-            <Image
-              m={{ r: ".5rem" }}
-              src="../images/Figms.svg"
-              h="20px"
-              w="auto"
-            />
-          }
+          className="btn-toggle"
+          prefix={<Image m={{ r: ".5rem" }} src={Figma} h="20px" w="auto" />}
         >
           Figma
         </Button>

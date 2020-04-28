@@ -1,11 +1,12 @@
 .toggle-buttons {
-  .btn {
+  .btn-toggle {
     background: none;
     border-radius: 8px;
+    height: 32px;
     color: rgba(0, 0, 0, 0.56);
   }
 
-  .btn:hover {
+  .btn-toggle:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   }
 

@@ -4,6 +4,7 @@ import React from "react"
 import { Div, Text, Image, Button } from "atomize"
 import WebsiteContainer from "./WebsiteContainer"
 import CustomContainer from "./CustomContainer"
+import Logo from "../../images/Default.png"
 
 const Header = () => (
   <Div h="4rem" className="header" pos="fixed" w="100%" top="0">
@@ -16,7 +17,7 @@ const Header = () => (
           justify="space-between"
         >
           <Div>
-            <Image src="./Default.png" h="22px" w="auto" />
+            <Image src={Logo} h="20px" w="109px" />
           </Div>
           <Div d="flex" align="center">
             <Text
