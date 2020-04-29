@@ -29,14 +29,13 @@ const heroPoints = [
 export default class HomeHero extends Component {
   render() {
     const { activeToggle } = this.props
-    console.log(activeToggle)
     return (
       <WebsiteContainer>
         <CustomContainer>
           <Div textAlign="center">
             <Div>
               <Text textWeight="bold" textSize="display4" m={{ b: ".5rem" }}>
-                {activeToggle === "figma"
+                {activeToggle === "Figma"
                   ? "Design interfaces at Scale"
                   : "Design for Sketch"}
               </Text>

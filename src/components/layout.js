@@ -12,7 +12,7 @@ import Header from "./common/Header"
 import { Div, StyleReset, ThemeProvider } from "atomize"
 import theme from "./common/theme"
 
-import "./styles/scss/style.scss"
+import "../styles/scss/style.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
