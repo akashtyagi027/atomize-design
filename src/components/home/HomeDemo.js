@@ -54,6 +54,7 @@ export default class HomeDemo extends Component {
               bg="gradient"
               p={{ t: "4.5rem", b: "1.25rem", x: "5rem" }}
               rounded="32px"
+              shadow="1"
             >
               <Div d="flex" justify="space-between">
                 <Div
