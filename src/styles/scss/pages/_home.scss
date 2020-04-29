@@ -2,4 +2,10 @@
   .active {
     color: #9392ff;
   }
+
+  .demo-points:last-child {
+    .check {
+      opacity: 0.56;
+    }
+  }
 }
