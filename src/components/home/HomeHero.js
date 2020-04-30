@@ -52,7 +52,7 @@ export default class HomeHero extends Component {
               </Text>
               <Div
                 m={{ t: "3.5rem", b: "5.75rem" }}
-                bgImg={heroImage}
+                bgImg="./images/hero-image.png"
                 p={{ b: "52%" }}
                 bgSize="cover"
                 bgPos="center"
