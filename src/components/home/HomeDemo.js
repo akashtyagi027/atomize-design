@@ -36,16 +36,16 @@ export default class HomeDemo extends Component {
   render() {
     return (
       <WebsiteContainer>
-        <CustomContainer>
+        <CustomContainer p={{ x: { xs: ".75rem", md: "7rem" } }}>
           <Div
             className="home-demo"
-            p={{ t: "3.125rem" }}
+            p={{ t: { xs: "4rem", md: "3.125rem" } }}
             border={{ t: "1px solid" }}
             borderColor="lightGray"
           >
             <Text
               textAlign="center"
-              textSize="subheader2"
+              textSize={{ xs: "subheader1", md: "subheader2" }}
               textWeight="bold"
               opacity=".56"
               maxW="43rem"
@@ -55,19 +55,28 @@ export default class HomeDemo extends Component {
               Thoughtworks, Latch and more
             </Text>
             <Div
-              m={{ t: "4.5rem" }}
+              m={{ t: { xs: "3rem", md: "4.5rem" } }}
               bg="gradient"
-              p={{ t: "4.5rem", b: "1.25rem", x: "5rem" }}
+              p={{
+                t: { xs: "3rem", md: "4.5rem" },
+                b: { xs: "1.75rem", md: "1.25rem" },
+                // x: { xs: "1.75rem", md: "5rem" },
+              }}
               rounded="32px"
               shadow="1"
             >
-              <Div d="flex" justify="space-between">
+              <Div
+                p={{ x: { xs: "1.75rem", md: "5rem" } }}
+                d="flex"
+                justify="space-between"
+                flexDir={{ xs: "column", md: "row" }}
+              >
                 <Div
                   d="flex"
                   flexDir="column"
                   textColor="white"
                   flexGrow="1 1 50%"
-                  m={{ r: "7.5rem" }}
+                  m={{ r: { xs: "0", md: "7.5rem" } }}
                 >
                   <Div textSize="caption2" textWeight="bold">
                     <Div
@@ -102,7 +111,7 @@ export default class HomeDemo extends Component {
                         Team
                       </Text>
                     </Div>
-                    <Div m={{ t: "1rem", b: "2rem" }}>
+                    <Div m={{ t: "1rem", b: { xs: "2.5rem", md: "2rem" } }}>
                       <Text
                         tag="span"
                         textSize="display4"
@@ -128,20 +137,29 @@ export default class HomeDemo extends Component {
                       </Text>
                     </Div>
 
-                    <Div d="flex" m={{ b: "1rem" }}>
+                    <Div
+                      d="flex"
+                      flexDir={{ xs: "column-reverse", md: "row" }}
+                      m={{ b: "1rem" }}
+                    >
                       <Button
-                        p={{ x: "3.75rem", y: "10px" }}
+                        p={{ y: "10px" }}
+                        minW={{ xs: "100%", md: "14.5rem" }}
                         bg="violet100"
                         rounded="12px"
                         textSize="paragraph"
                         textWeight="bold"
-                        m={{ r: "1rem" }}
+                        m={{
+                          r: { xs: "0", md: "1rem" },
+                          t: { xs: "1rem", md: "0" },
+                        }}
                         h="auto"
                       >
                         Purchase Now
                       </Button>
                       <Button
-                        p={{ x: "1.75rem", y: "10px" }}
+                        p={{ y: "10px" }}
+                        minW={{ xs: "100%", md: "11rem" }}
                         bg="dark"
                         textSize="paragraph"
                         textWeight="bold"
@@ -153,6 +171,7 @@ export default class HomeDemo extends Component {
                     </Div>
                     <Text
                       textWeight="600"
+                      textAlign={{ xs: "center", md: "left" }}
                       textSize="caption"
                       textColor="medium"
                     >
@@ -161,7 +180,13 @@ export default class HomeDemo extends Component {
                   </Div>
                 </Div>
 
-                <Div flexGrow="1 1 50%">
+                <Div
+                  flexGrow="1 1 50%"
+                  m={{ t: { xs: "3.25rem", md: "0" }, x: { xs: "-1.75rem" } }}
+                  p={{ t: { xs: "1.5rem", md: "0" }, x: { xs: "1.75rem" } }}
+                  border={{ t: { xs: "1px solid", md: "none" } }}
+                  borderColor="dark"
+                >
                   <Text
                     textColor="white"
                     textSize="caption2"
@@ -175,8 +200,8 @@ export default class HomeDemo extends Component {
                       <Div
                         key={id}
                         d="flex"
-                        m={{ b: ".5rem" }}
-                        align="center"
+                        m={{ b: { xs: ".75rem", md: ".5rem" } }}
+                        align="start"
                         className="demo-points"
                       >
                         <Image
@@ -184,11 +209,14 @@ export default class HomeDemo extends Component {
                           className="check"
                           h="1.5rem"
                           w="auto"
-                          m={{ r: "1.625rem" }}
+                          m={{
+                            r: { xs: "1.125rem", md: "1.625rem" },
+                            t: { xs: "3px", md: "5px" },
+                          }}
                         />
                         <Text
                           textColor="white"
-                          textSize="paragraph2"
+                          textSize={{ xs: "paragraph", md: "paragraph2" }}
                           opacity=".56"
                           textWeight="bold"
                         >
@@ -203,7 +231,10 @@ export default class HomeDemo extends Component {
               <Div
                 textAlign="center"
                 p={{ t: "1.5rem" }}
-                m={{ t: "4rem", x: "-5rem" }}
+                m={{
+                  t: { xs: "2.25rem", md: "4rem" },
+                  //x: { xs: "-1.75rem", md: "-5rem" },
+                }}
                 border={{ t: "1px solid" }}
                 borderColor="rgba(255,255,255, .16)"
               >

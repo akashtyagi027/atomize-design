@@ -21,13 +21,13 @@ export default class HomePage extends Component {
         <Div m={{ t: "2rem" }}>
           <HomeHero activeToggle={this.state.toggle} />
         </Div>
-        <Div m={{ t: "10.5rem" }}>
+        <Div m={{ t: { xs: "5.5rem", md: "10.5rem" } }}>
           <HomeAccelerate />
         </Div>
-        <Div m={{ t: "10.5rem" }}>
+        <Div m={{ t: { xs: "4.5rem", md: "10.5rem" } }}>
           <HomeInside />
         </Div>
-        <Div m={{ t: "9.75rem", b: "5.5rem" }}>
+        <Div m={{ t: { xs: "4rem", md: "9.75rem" }, b: "5.5rem" }}>
           <HomeDemo />
         </Div>
       </Div>

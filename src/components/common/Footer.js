@@ -26,33 +26,61 @@ export default class Footer extends Component {
   render() {
     return (
       <WebsiteContainer>
-        <CustomContainer>
+        <CustomContainer p={{ x: { xs: "1rem", md: "7rem" } }}>
           <Div>
             <Div border={{ y: "1px solid" }} borderColor="#E1E4E8">
               <Row m="0">
                 <Col
-                  p={{ t: "3.6rem", b: "3.125rem" }}
-                  border={{ r: "1px solid" }}
+                  size={{ xs: "12", md: "6" }}
+                  p={{
+                    t: { xs: "2.5rem", md: "3.6rem" },
+                    b: { xs: "3.5rem", md: "3.125rem" },
+                  }}
+                  border={{ r: { xs: "none", md: "1px solid" } }}
                   borderColor="#E1E4E8"
                 >
-                  <Div d="flex" justify="space-between">
-                    <Image src="./images/footer-logo.svg" h="20px" w="auto" />
+                  <Div
+                    d="flex"
+                    justify="space-between"
+                    flexDir={{ xs: "column", md: "row" }}
+                  >
+                    <Image
+                      src="./images/footer-logo.svg"
+                      h="20px"
+                      w="108px"
+                      m={{ b: { xs: "1.75rem", md: "0" } }}
+                    />
                     <Text
                       maxW="20rem"
-                      textSize="paragraph"
+                      textSize={{ xs: "caption2", md: "paragraph" }}
                       textWeight="600"
                       opacity=".8"
-                      m={{ r: "3rem" }}
+                      m={{ r: { xs: "0", md: "3rem" } }}
                     >
                       Atomize Design System aims to help designers become better
                       and more productive at design.
                     </Text>
                   </Div>
                 </Col>
-                <Col p={{ t: "3.6rem", b: "3.125rem" }}>
-                  <Div d="flex" justify="space-between" p={{ l: "4.5rem" }}>
+                <Col
+                  size={{ xs: "12", md: "6" }}
+                  p={{ t: { xs: "1.5rem", md: "3.6rem" }, b: "3.125rem" }}
+                  border={{ t: { xs: "1px solid", md: "none" } }}
+                  borderColor="light"
+                >
+                  <Div
+                    d="flex"
+                    justify="space-between"
+                    p={{ l: { xs: "0", md: "4.5rem" } }}
+                  >
                     {footerLinks.map((links, id) => (
-                      <Div key={id}>
+                      <Div
+                        key={id}
+                        m={{
+                          r: { xs: "2.5rem", md: "0" },
+                          b: { xs: "3.6rem", md: "0" },
+                        }}
+                      >
                         <Text
                           textSize="caption2"
                           textWeight="bold"
@@ -96,8 +124,19 @@ export default class Footer extends Component {
                 </Col>
               </Row>
             </Div>
-            <Div p={{ y: "2.625rem" }} textAlign="center">
-              <Text textSize="caption" textWeight="600" opacity=".4">
+            <Div
+              p={{
+                t: { xs: "1rem", md: "2.625rem" },
+                b: { xs: "1.75rem", md: "2.625rem" },
+              }}
+              textAlign={{ xs: "left", md: "center" }}
+            >
+              <Text
+                p={{ l: { xs: ".5rem", md: "0" } }}
+                textSize="caption"
+                textWeight="600"
+                opacity=".4"
+              >
                 Copyright © Atomize Design 2017-2020
               </Text>
             </Div>

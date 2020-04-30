@@ -27,13 +27,22 @@ export default class HomeInside extends Component {
       <WebsiteContainer>
         <CustomContainer>
           <Div>
-            <Div d="flex" justify="space-between">
-              <Text textSize="display2" textWeight="bold">
+            <Div
+              d="flex"
+              justify="space-between"
+              flexDir={{ xs: "column", md: "row" }}
+              textAlign={{ xs: "center", md: "left" }}
+            >
+              <Text
+                textSize={{ xs: "subheader2", md: "display2" }}
+                textWeight="bold"
+                m={{ b: "1.5rem" }}
+              >
                 What’s inside 👀
               </Text>
               <Text
                 maxW="35rem"
-                textSize="paragraph2"
+                textSize={{ xs: "paragraph", md: "paragraph2" }}
                 textWeight="bold"
                 opacity=".56"
               >
@@ -43,7 +52,12 @@ export default class HomeInside extends Component {
               </Text>
             </Div>
 
-            <Div d="flex" justify="space-between" m={{ t: "6rem" }}>
+            <Div
+              d="flex"
+              justify="space-between"
+              flexDir={{ xs: "column", md: "row" }}
+              m={{ t: { xs: "4.25rem", md: "6rem" } }}
+            >
               {cards.map((card, id) => {
                 return (
                   <Div
@@ -52,10 +66,17 @@ export default class HomeInside extends Component {
                     rounded="24px"
                     flexGrow="1"
                     maxW="22rem"
-                    m={{ x: id % 2 && "24px" }}
+                    m={{
+                      x: { xs: "0", md: id % 2 && "1.5rem" },
+                      y: { xs: id % 2 && "1.5rem", md: "0" },
+                    }}
                     // minW="22rem"
                     shadow="1"
-                    p={{ x: "2rem", t: "2.5rem", b: "2.125rem" }}
+                    p={{
+                      x: "2rem",
+                      t: { xs: "2rem", md: "2.5rem" },
+                      b: { xs: "3rem", md: "2.125rem" },
+                    }}
                   >
                     <Text textSize="paragraph2" textWeight="bold">
                       {card.heading}
@@ -64,7 +85,7 @@ export default class HomeInside extends Component {
                       textSize="caption2"
                       opacity=".4"
                       textWeight="bold"
-                      m={{ t: ".5rem", b: "2rem" }}
+                      m={{ t: ".5rem", b: { xs: "1.5rem", md: "2rem" } }}
                     >
                       {card.text}
                     </Text>

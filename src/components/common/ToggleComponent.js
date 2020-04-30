@@ -42,7 +42,7 @@ export default class ToggleComponent extends Component {
     const { active } = this.state
     return (
       <Div
-        m={{ t: "9.5rem", x: "auto" }}
+        m={{ t: { xs: "8.125rem", md: "9.5rem" }, x: "auto" }}
         d="flex"
         justify="center"
         maxW="12rem"

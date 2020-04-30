@@ -34,7 +34,11 @@ export default class HomeHero extends Component {
         <CustomContainer>
           <Div textAlign="center">
             <Div>
-              <Text textWeight="bold" textSize="display4" m={{ b: ".5rem" }}>
+              <Text
+                textWeight="bold"
+                textSize={{ xs: "subheader4", md: "display4" }}
+                m={{ b: { xs: "1.5rem", md: ".5rem" } }}
+              >
                 {activeToggle === "Figma"
                   ? "Design interfaces at Scale"
                   : "Design for Sketch"}
@@ -51,7 +55,10 @@ export default class HomeHero extends Component {
                 interfaces for the web.
               </Text>
               <Div
-                m={{ t: "3.5rem", b: "5.75rem" }}
+                m={{
+                  t: { xs: "2.5rem", md: "3.5rem" },
+                  b: { xs: "4.375rem", md: "5.75rem" },
+                }}
                 bgImg="./images/hero-image.png"
                 p={{ b: "52%" }}
                 bgSize="cover"
@@ -61,20 +68,41 @@ export default class HomeHero extends Component {
               <Div
                 d="flex"
                 justify="space-between"
+                flexDir={{ xs: "column", md: "row" }}
                 textAlign="left"
-                p={{ y: "2.5rem", l: "2rem" }}
-                border={{ t: "1px solid", b: "1px solid" }}
+                p={{
+                  y: { xs: "0", md: "2.5rem" },
+                  l: { xs: "1rem", md: "2rem" },
+                }}
+                border={{ t: "1px solid", b: { xs: "none", md: "1px solid" } }}
                 borderColor="#E1E4E8"
-                m={{ x: "-1rem" }}
+                m={{ x: { xs: "-.5rem", md: "-1rem" } }}
               >
                 {heroPoints.map((data, id) => {
                   return (
-                    <Div d="flex" key={id} maxW="18rem" align="center">
-                      <Image src={data.image} h="1.5rem" w="auto" />
+                    <Div
+                      d="flex"
+                      key={id}
+                      maxW={{ xs: "auto", md: "18rem" }}
+                      align={{ xs: "start", md: "center" }}
+                      p={{
+                        t: { xs: "2rem", md: "0" },
+                        b: { xs: "1.75rem", md: "0" },
+                      }}
+                      border={{
+                        b: { xs: "1px solid", md: "none" },
+                      }}
+                      borderColor="#E1E4E8"
+                    >
+                      <Image
+                        src={data.image}
+                        h="1.5rem"
+                        w="auto"
+                        m={{ t: { xs: ".375rem", md: "0" } }}
+                      />
                       <Div
                         m={{ l: "2rem" }}
-                        textSize="caption"
-                        textSize="caption"
+                        textSize={{ xs: "caption3", md: "caption" }}
                       >
                         <Text tag="span" textWeight="bold" textColor="#000">
                           {data.heading} -{" "}

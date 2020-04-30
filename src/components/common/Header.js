@@ -20,7 +20,7 @@ const Header = () => (
       <CustomContainer>
         <Div
           p={{ y: ".75rem" }}
-          d="flex"
+          d={{ xs: "none", md: "flex" }}
           align="center"
           justify="space-between"
         >
