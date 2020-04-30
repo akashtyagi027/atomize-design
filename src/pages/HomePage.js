@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import HomeHero from "../components/home/HomeHero"
-import { Div, Text, Image } from "atomize"
+import { Div } from "atomize"
 import ToggleComponent from "../components/common/ToggleComponent"
 import HomeAccelerate from "../components/home/HomeAccelerate"
 import HomeInside from "../components/home/HomeInside"
