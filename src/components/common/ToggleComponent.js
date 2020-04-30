@@ -3,43 +3,16 @@ import { Div, Text, Image, Button } from "atomize"
 import Sketch from "../../images/icons/Sketch.svg"
 import Figma from "../../images/icons/Figma.svg"
 
-const data = [
-  {
-    image: Sketch,
-    text: "Sketch",
-  },
-  {
-    image: Figma,
-    text: "Figma",
-  },
-]
-// for (var i = 0; i < buttons.length; i++) {
-//   buttons[i].addEventListener("click", function () {
-//     let current = document.getElementsByClassName("active")
-//     current[0].className = current[0].className.replace(" active", "")
-//     this.className += " active"
-//   })
-// }
 export default class ToggleComponent extends Component {
-  state = { active: "Sketch" }
+  //state = { active: "Sketch" }
 
-  toggle = (e, button) => {
+  toggle = e => {
     this.props.toggleId(e.target.id)
-    this.setState({ active: button })
+    // this.setState({ active: button })
   }
 
-  // color = () => {
-  //   for (var i = 0; i < buttons.length; i++) {
-  //     buttons[i].addEventListener("click", function () {
-  //       let current = document.getElementsByClassName("active")
-  //       current[0].className = current[0].className.replace(" active", "")
-  //       this.className += " active"
-  //     })
-  //   }
-  // }
-
   render() {
-    const { active } = this.state
+    const { data, activeToggle } = this.props
     return (
       <Div
         m={{ t: { xs: "8.125rem", md: "9.5rem" }, x: "auto" }}
@@ -52,33 +25,64 @@ export default class ToggleComponent extends Component {
         rounded="xl"
         className="toggle-buttons"
       >
-        {data.map((button, id) => {
+        {Object.keys(data).map((info, id) => {
           return (
-            <Button
-              key={id}
-              d="flex"
-              p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
-              cursor="pointer"
-              id={button.text}
-              h="2rem"
-              onClick={e => this.toggle(e, button.text)}
-              bg="white"
-              textSize="caption"
-              textWeight="bold"
-              className={active === button.text ? "active" : "btn-toggle"}
-              prefix={
-                <Image
-                  m={{ r: ".5rem" }}
-                  src={button.image}
-                  h="20px"
-                  w="auto"
-                />
-              }
-            >
-              {button.text}
-            </Button>
+            <Div key={id}>
+              <Button
+                onClick={this.toggle}
+                d="flex"
+                p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
+                cursor="pointer"
+                id={data[info].text}
+                h="2rem"
+                bg="white"
+                textSize="caption"
+                textWeight="bold"
+                className={
+                  activeToggle === data[info].text ? "active" : "btn-toggle"
+                }
+                prefix={
+                  <Image
+                    m={{ r: ".5rem" }}
+                    id={data[info].text}
+                    src={data[info].image}
+                    h="20px"
+                    w="auto"
+                  />
+                }
+              >
+                {data[info].text}
+              </Button>
+            </Div>
           )
         })}
+        {/* {info.map((button, id) => {
+          return (
+            // <Button
+            //   key={id}
+            //   d="flex"
+            //   p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
+            //   cursor="pointer"
+            //   id={button.text}
+            //   h="2rem"
+            //   onClick={e => this.toggle(e, button.text)}
+            //   bg="white"
+            //   textSize="caption"
+            //   textWeight="bold"
+            //   className={active === button.text ? "active" : "btn-toggle"}
+            //   prefix={
+            //     <Image
+            //       m={{ r: ".5rem" }}
+            //       src={button.image}
+            //       h="20px"
+            //       w="auto"
+            //     />
+            //   }
+            // >
+            //   {button.text}
+            // </Button>
+          )
+        })} */}
       </Div>
     )
   }

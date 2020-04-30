@@ -43,6 +43,7 @@ export default class Footer extends Component {
                     d="flex"
                     justify="space-between"
                     flexDir={{ xs: "column", md: "row" }}
+                    p={{ x: { xs: ".5rem", md: "0" } }}
                   >
                     <Image
                       src="./images/footer-logo.svg"
@@ -71,7 +72,10 @@ export default class Footer extends Component {
                   <Div
                     d="flex"
                     justify="space-between"
-                    p={{ l: { xs: "0", md: "4.5rem" } }}
+                    flexWrap="wrap"
+                    p={{
+                      l: { xs: "0.5rem", md: "4.5rem" },
+                    }}
                   >
                     {footerLinks.map((links, id) => (
                       <Div
