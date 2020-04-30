@@ -29,7 +29,7 @@ export default class Footer extends Component {
         <CustomContainer>
           <Div>
             <Div border={{ y: "1px solid" }} borderColor="#E1E4E8">
-              <Row>
+              <Row m="0">
                 <Col
                   p={{ t: "3.6rem", b: "3.125rem" }}
                   border={{ r: "1px solid" }}
