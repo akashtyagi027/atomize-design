@@ -37,7 +37,12 @@ export default class HomeDemo extends Component {
     return (
       <WebsiteContainer>
         <CustomContainer>
-          <Div className="home-demo">
+          <Div
+            className="home-demo"
+            p={{ t: "3.125rem" }}
+            border={{ t: "1px solid" }}
+            borderColor="lightGray"
+          >
             <Text
               textAlign="center"
               textSize="subheader2"
@@ -120,23 +125,23 @@ export default class HomeDemo extends Component {
 
                     <Div d="flex" m={{ b: "1rem" }}>
                       <Button
-                        p={{ x: "3.75rem" }}
+                        p={{ x: "3.75rem", y: "10px" }}
                         bg="violet100"
                         rounded="12px"
                         textSize="paragraph"
                         textWeight="bold"
                         m={{ r: "1rem" }}
-                        h="3rem"
+                        h="auto"
                       >
                         Purchase Now
                       </Button>
                       <Button
-                        p={{ x: "1.75rem" }}
+                        p={{ x: "1.75rem", y: "10px" }}
                         bg="dark"
                         textSize="paragraph"
                         textWeight="bold"
                         rounded="12px"
-                        h="3rem"
+                        h="auto"
                       >
                         Try FREE Demo
                       </Button>
@@ -193,7 +198,7 @@ export default class HomeDemo extends Component {
               <Div
                 textAlign="center"
                 p={{ t: "1.5rem" }}
-                m={{ t: "4rem", x: "-100%" }}
+                m={{ t: "4rem", x: "-5rem" }}
                 border={{ t: "1px solid" }}
                 borderColor="rgba(255,255,255, .16)"
               >

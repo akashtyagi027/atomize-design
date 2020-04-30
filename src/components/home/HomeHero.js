@@ -71,21 +71,15 @@ export default class HomeHero extends Component {
                   return (
                     <Div d="flex" key={id} maxW="18rem" align="center">
                       <Image src={data.image} h="1.5rem" w="auto" />
-                      <Div m={{ l: "2rem" }}>
-                        <Text
-                          tag="span"
-                          textSize="caption"
-                          textWeight="bold"
-                          textColor="#000"
-                        >
+                      <Div
+                        m={{ l: "2rem" }}
+                        textSize="caption"
+                        textSize="caption"
+                      >
+                        <Text tag="span" textWeight="bold" textColor="#000">
                           {data.heading} -{" "}
                         </Text>
-                        <Text
-                          tag="span"
-                          opacity=".4"
-                          textSize="caption"
-                          textWeight="bold"
-                        >
+                        <Text tag="span" opacity=".4" textWeight="bold">
                           {data.text}
                         </Text>
                       </Div>

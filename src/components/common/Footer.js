@@ -65,10 +65,16 @@ export default class Footer extends Component {
                           textSize="caption2"
                           textWeight="600"
                           opacity=".4"
+                          cursor="pointer"
                         >
                           {links.text1 ? links.text1 : ""}
                         </Text>
-                        <Text textSize="caption2" opacity=".4" textWeight="600">
+                        <Text
+                          textSize="caption2"
+                          opacity=".4"
+                          cursor="pointer"
+                          textWeight="600"
+                        >
                           {links.text2 ? links.text2 : ""}
                         </Text>
                         <Div d={links.icon1 ? "flex" : "none"}>
@@ -76,10 +82,12 @@ export default class Footer extends Component {
                             src={links.icon1 ? links.icon1 : ""}
                             h="1.5rem"
                             m={{ r: ".625rem" }}
+                            cursor="pointer"
                           />
                           <Image
                             src={links.icon2 ? links.icon2 : ""}
                             h="1.5rem"
+                            cursor="pointer"
                           />
                         </Div>
                       </Div>

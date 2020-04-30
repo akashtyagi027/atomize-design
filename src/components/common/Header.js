@@ -4,10 +4,18 @@ import React from "react"
 import { Div, Text, Image, Button } from "atomize"
 import WebsiteContainer from "./WebsiteContainer"
 import CustomContainer from "./CustomContainer"
-import Logo from "../../images/icons/Default.png"
 
 const Header = () => (
-  <Div h="4rem" className="header" pos="fixed" w="100%" top="0" zIndex="4">
+  <Div
+    h="4rem"
+    className="header"
+    pos="fixed"
+    w="100%"
+    top="0"
+    zIndex="4"
+    border={{ b: "1px solid" }}
+    borderColor="lightGray"
+  >
     <WebsiteContainer>
       <CustomContainer>
         <Div
@@ -17,7 +25,7 @@ const Header = () => (
           justify="space-between"
         >
           <Div>
-            <Image src={Logo} h="20px" w="109px" />
+            <Image src="./images/Atomize-logo.svg" h="20px" w="109px" />
           </Div>
           <Div d="flex" align="center">
             <Text
@@ -40,7 +48,12 @@ const Header = () => (
             >
               TRY DEMO
             </Text>
-            <Button textColor="white" textWeight="bold" bg="violet100">
+            <Button
+              textColor="white"
+              textWeight="bold"
+              rounded="8px"
+              bg="violet100"
+            >
               Buy Now
             </Button>
           </Div>

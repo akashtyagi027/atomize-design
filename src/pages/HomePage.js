@@ -24,10 +24,10 @@ export default class HomePage extends Component {
         <Div m={{ t: "10.5rem" }}>
           <HomeAccelerate />
         </Div>
-        <Div m={{ t: "10.5rem", b: "10.5rem" }}>
+        <Div m={{ t: "10.5rem" }}>
           <HomeInside />
         </Div>
-        <Div m={{ t: "10.5rem", b: "10.5rem" }}>
+        <Div m={{ t: "9.75rem", b: "5.5rem" }}>
           <HomeDemo />
         </Div>
       </Div>

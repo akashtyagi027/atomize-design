@@ -24,6 +24,7 @@ const theme = {
     primary: "#000",
     violet100: "#5552FF",
     violet200: "#4340FC",
+    lightGray: "#E1E4E8",
 
     light: "#F1F2F4",
     medium: "#707070",
