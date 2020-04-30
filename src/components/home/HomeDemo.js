@@ -112,9 +112,14 @@ export default class HomeDemo extends Component {
                         {this.state.plan === "individual" ? "$39" : "$59"}
                       </Text>
                       <Text
+                        d={
+                          this.state.plan === "individual"
+                            ? "none"
+                            : "inline-block"
+                        }
                         tag="span"
                         m={{ l: ".625rem" }}
-                        transform="translateX(-50%)"
+                        //transform="translateX(-50%)"
                         opacity=".4"
                         textSize="paragraph"
                         textWeight="bold"
