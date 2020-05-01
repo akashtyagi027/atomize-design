@@ -91,7 +91,7 @@ export default class MobileHeaderMenu extends Component {
                 textSize="paragraph"
                 textWeight="bold"
                 textAlign="center"
-                border={{ y: "1px solid" }}
+                border={{ t: "1px solid" }}
                 borderColor="lightGray"
               >
                 <Text
@@ -103,7 +103,12 @@ export default class MobileHeaderMenu extends Component {
                 >
                   Atomize React ↗️
                 </Text>
-                <Text p={{ t: "32px", b: "20px" }} textColor="violet200">
+                <Text
+                  p={{ t: "32px", b: "20px" }}
+                  border={{ b: "1px solid" }}
+                  borderColor="lightGray"
+                  textColor="violet200"
+                >
                   TRY DEMO
                 </Text>
                 <Div p={{ t: "32px", b: "52px" }}>
