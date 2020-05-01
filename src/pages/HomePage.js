@@ -18,7 +18,11 @@ const toggleData = {
 }
 
 export default class HomePage extends Component {
-  state = { activeToggle: "Sketch" }
+  state = { activeToggle: "" }
+
+  componentDidMount() {
+    this.setState({ activeToggle: "Sketch" })
+  }
 
   toggle = id => {
     this.setState({ activeToggle: id })

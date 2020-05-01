@@ -1,7 +1,5 @@
 import React, { Component } from "react"
 import { Div, Text, Image, Button } from "atomize"
-import Sketch from "../../images/icons/Sketch.svg"
-import Figma from "../../images/icons/Figma.svg"
 
 export default class ToggleComponent extends Component {
   //state = { active: "Sketch" }

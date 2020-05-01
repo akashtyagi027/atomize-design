@@ -34,6 +34,7 @@ export default class HomeDemo extends Component {
   }
 
   render() {
+    const { plan } = this.state
     return (
       <WebsiteContainer>
         <CustomContainer p={{ x: { xs: ".75rem", md: "7rem" } }}>
@@ -91,10 +92,7 @@ export default class HomeDemo extends Component {
                         id="individual"
                         onClick={this.changePlan}
                         cursor="pointer"
-                        onClick={this.changePlan}
-                        className={
-                          this.state.plan === "individual" ? "active" : ""
-                        }
+                        className={plan === "individual" ? "active" : ""}
                       >
                         Individual
                       </Text>
@@ -105,7 +103,7 @@ export default class HomeDemo extends Component {
                         tag="span"
                         id="team"
                         onClick={this.changePlan}
-                        className={this.state.plan === "team" ? "active" : ""}
+                        className={plan === "team" ? "active" : ""}
                         cursor="pointer"
                       >
                         Team
@@ -118,14 +116,10 @@ export default class HomeDemo extends Component {
                         textWeight="bold"
                         style={{ lineHeight: "64px" }}
                       >
-                        {this.state.plan === "individual" ? "$39" : "$59"}
+                        {plan === "individual" ? "$39" : "$59"}
                       </Text>
                       <Text
-                        d={
-                          this.state.plan === "individual"
-                            ? "none"
-                            : "inline-block"
-                        }
+                        d={plan === "individual" ? "none" : "inline-block"}
                         tag="span"
                         m={{ l: ".625rem" }}
                         //transform="translateX(-50%)"
