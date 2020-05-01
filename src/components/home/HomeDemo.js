@@ -237,6 +237,8 @@ export default class HomeDemo extends Component {
                   textWeight="600"
                   textSize="caption"
                   opacity=".4"
+                  maxW={{ xs: "296px", md: "100%" }}
+                  m={{ xs: "auto", md: "0" }}
                 >
                   50% OFF for Students. Please email contact@atomizedesign.com
                   with valid proof of your school/college enrollment
