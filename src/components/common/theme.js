@@ -43,6 +43,9 @@ const theme = {
   shadows: {
     1: "0px 1px 1px rgba(0, 0, 0, 0.1);",
     2: "0px 32px 40px rgba(0, 0, 0, 0.1)",
+    3: "0px 24px 40px rgba(16, 20, 38, 0.14)",
+    4: "0px 16.6px 27.6667px rgba(16, 20, 38, 0.14)",
+    5: "0px 8.2px 13.6667px rgba(16, 20, 38, 0.14)",
   },
 }
 

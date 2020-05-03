@@ -55,16 +55,46 @@ export default class HomeHero extends Component {
                 that helps designers create beautiful and consistent user
                 interfaces for the web.
               </Text>
-              <Div
-                m={{
-                  t: { xs: "2.5rem", md: "3.5rem" },
-                  b: { xs: "4.375rem", md: "5.75rem" },
-                }}
-                bgImg="./images/hero-image.png"
-                p={{ b: "52%" }}
-                bgSize="cover"
-                bgPos="center"
-              ></Div>
+
+              <Div p={{ x: { md: "85px", xl: "0" } }}>
+                <Div
+                  maxW="960px"
+                  m={{
+                    t: { xs: "2.5rem", md: "3.5rem" },
+                    b: { xs: "4.375rem", md: "5.75rem" },
+                    x: "auto",
+                  }}
+                  p={{
+                    x: { xs: "8px", md: "16px", xl: "24px" },
+                    t: { xs: "8px", md: "16px", xl: "24px" },
+                    b: { xs: "10px", md: "19px", xl: "28px" },
+                  }}
+                  bg="light"
+                  rounded={{ xs: "16px", md: "33px", xl: "48px" }}
+                  border="1px solid"
+                  borderColor="lightGray"
+                >
+                  <Div
+                    p={{
+                      y: { xs: "8px", md: "16px", xl: "24px" },
+                      x: { xs: "49px", md: "100px", xl: "144px" },
+                    }}
+                    bg="white"
+                    //m="auto"
+                    rounded={{ xs: "11px", md: "22px", xl: "32px" }}
+                    border="1px solid"
+                    borderColor="light"
+                    shadow={{ xs: "5", md: "4", xl: "3" }}
+                  >
+                    <Div
+                      bgImg="./images/Sketch-hero.png"
+                      p={{ b: "76.2%" }}
+                      bgSize="cover"
+                      bgPos="center"
+                    ></Div>
+                  </Div>
+                </Div>
+              </Div>
 
               <Div
                 d="flex"
