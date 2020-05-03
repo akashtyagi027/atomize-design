@@ -59,7 +59,7 @@ export default class Footer extends Component {
                       textWeight="600"
                       opacity=".8"
                       m={{ r: { xs: "0", xl: "3rem" } }}
-                      p={{ l: { md: "4rem", xl: "0" } }}
+                      //p={{ l: { md: "4rem", xl: "0" } }}
                     >
                       Atomize Design System aims to help designers become better
                       and more productive at design.
