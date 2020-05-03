@@ -37,7 +37,7 @@ export default class HomeDemo extends Component {
     const { plan } = this.state
     return (
       <WebsiteContainer>
-        <CustomContainer p={{ x: { xs: ".75rem", md: "7rem" } }}>
+        <CustomContainer p={{ x: { xs: ".75rem", md: "1.5rem", xl: "7rem" } }}>
           <Div
             className="home-demo"
             p={{ t: { xs: "4rem", md: "3.125rem" } }}
@@ -46,7 +46,7 @@ export default class HomeDemo extends Component {
           >
             <Text
               textAlign="center"
-              textSize={{ xs: "subheader1", md: "subheader2" }}
+              textSize={{ xs: "subheader1", xl: "subheader2" }}
               textWeight="bold"
               opacity=".56"
               maxW="43rem"
@@ -56,10 +56,10 @@ export default class HomeDemo extends Component {
               Thoughtworks, Latch and more
             </Text>
             <Div
-              m={{ t: { xs: "3rem", md: "4.5rem" } }}
+              m={{ t: { xs: "3rem", md: "5.5rem", xl: "4.5rem" } }}
               bg="gradient"
               p={{
-                t: { xs: "3rem", md: "4.5rem" },
+                t: { xs: "3rem", md: "3.5rem", xl: "4.5rem" },
                 b: { xs: "1.75rem", md: "1.25rem" },
                 // x: { xs: "1.75rem", md: "5rem" },
               }}
@@ -67,10 +67,10 @@ export default class HomeDemo extends Component {
               shadow="1"
             >
               <Div
-                p={{ x: { xs: "1.75rem", md: "5rem" } }}
+                p={{ x: { xs: "1.75rem", md: "4rem", xl: "5rem" } }}
                 d="flex"
                 justify="space-between"
-                flexDir={{ xs: "column", md: "row" }}
+                flexDir={{ xs: "column", xl: "row" }}
               >
                 <Div
                   d="flex"
@@ -176,9 +176,15 @@ export default class HomeDemo extends Component {
 
                 <Div
                   flexGrow="1 1 50%"
-                  m={{ t: { xs: "3.25rem", md: "0" }, x: { xs: "-1.75rem" } }}
-                  p={{ t: { xs: "1.5rem", md: "0" }, x: { xs: "1.75rem" } }}
-                  border={{ t: { xs: "1px solid", md: "none" } }}
+                  m={{
+                    t: { xs: "3.25rem", md: "1.75rem", xl: "0" },
+                    x: { xs: "-1.75rem", md: "-5rem", xl: "0" },
+                  }}
+                  p={{
+                    t: { xs: "1.5rem", md: "2.5rem", xl: "0" },
+                    x: { xs: "1.75rem", md: "5rem", xl: "0" },
+                  }}
+                  border={{ t: { xs: "1px solid", xl: "none" } }}
                   borderColor="dark"
                 >
                   <Text
@@ -226,7 +232,7 @@ export default class HomeDemo extends Component {
                 textAlign="center"
                 p={{ t: "1.5rem" }}
                 m={{
-                  t: { xs: "2.25rem", md: "4rem" },
+                  t: { xs: "2.25rem", md: "1.5rem", xl: "4rem" },
                   //x: { xs: "-1.75rem", md: "-5rem" },
                 }}
                 border={{ t: "1px solid" }}

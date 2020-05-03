@@ -8,6 +8,9 @@
 // Layout
 @import "layout/body";
 
+//Helpers
+@import "helpers/mixins";
+
 //Components
 @import "components/header";
 @import "components/toggleComponent";

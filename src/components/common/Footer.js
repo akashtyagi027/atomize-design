@@ -26,17 +26,19 @@ export default class Footer extends Component {
   render() {
     return (
       <WebsiteContainer>
-        <CustomContainer p={{ x: { xs: "1rem", md: "7rem" } }}>
+        <CustomContainer p={{ x: { xs: "1rem", md: "0", xl: "7rem" } }}>
           <Div>
             <Div border={{ y: "1px solid" }} borderColor="#E1E4E8">
               <Row m="0">
                 <Col
-                  size={{ xs: "12", md: "6" }}
+                  size={{ xs: "12", xl: "6" }}
                   p={{
                     t: { xs: "2.5rem", md: "3.6rem" },
                     b: { xs: "3.5rem", md: "3.125rem" },
+                    l: { md: "4rem", xl: "0" },
+                    r: { md: "5.75rem", xl: "0" },
                   }}
-                  border={{ r: { xs: "none", md: "1px solid" } }}
+                  border={{ r: { xs: "none", xl: "1px solid" } }}
                   borderColor="#E1E4E8"
                 >
                   <Div
@@ -52,11 +54,12 @@ export default class Footer extends Component {
                       m={{ b: { xs: "1.75rem", md: "0" } }}
                     />
                     <Text
-                      maxW="20rem"
+                      maxW={{ md: "30.75rem", xl: "20rem" }}
                       textSize={{ xs: "caption2", md: "paragraph" }}
                       textWeight="600"
                       opacity=".8"
-                      m={{ r: { xs: "0", md: "3rem" } }}
+                      m={{ r: { xs: "0", xl: "3rem" } }}
+                      p={{ l: { md: "4rem", xl: "0" } }}
                     >
                       Atomize Design System aims to help designers become better
                       and more productive at design.
@@ -64,9 +67,14 @@ export default class Footer extends Component {
                   </Div>
                 </Col>
                 <Col
-                  size={{ xs: "12", md: "6" }}
-                  p={{ t: { xs: "1.5rem", md: "3.6rem" }, b: "3.125rem" }}
-                  border={{ t: { xs: "1px solid", md: "none" } }}
+                  size={{ xs: "12", xl: "6" }}
+                  p={{
+                    t: { xs: "1.5rem", md: "2.5rem", xl: "3.6rem" },
+                    b: "3.125rem",
+                    l: { md: "4rem", xl: "0" },
+                    r: { md: "5.75rem", xl: "0" },
+                  }}
+                  border={{ t: { xs: "1px solid", xl: "none" } }}
                   borderColor="light"
                 >
                   <Div
@@ -74,8 +82,10 @@ export default class Footer extends Component {
                     justify="space-between"
                     flexWrap="wrap"
                     p={{
-                      l: { xs: "0.5rem", md: "4.5rem" },
+                      l: { xs: "0.5rem", md: "0", xl: "4.5rem" },
                     }}
+                    maxW={{ md: "30.75rem", xl: "auto" }}
+                    m={{ md: "0 0 0  auto", xl: "0" }}
                   >
                     {footerLinks.map((links, id) => (
                       <Div

@@ -32,12 +32,13 @@ export default class HomeHero extends Component {
     return (
       <WebsiteContainer>
         <CustomContainer>
-          <Div textAlign="center">
+          <Div textAlign="center" className="home-hero">
             <Div>
               <Text
+                className="horo-heading"
                 textWeight="bold"
-                textSize={{ xs: "subheader4", md: "display4" }}
-                m={{ b: { xs: "1.5rem", md: ".5rem" } }}
+                textSize={{ xs: "subheader4", md: "display2", xl: "display4" }}
+                m={{ b: { xs: "1.5rem", md: "1rem" } }}
               >
                 {activeToggle === "Figma"
                   ? "Design interfaces at Scale"
@@ -72,23 +73,25 @@ export default class HomeHero extends Component {
                 textAlign="left"
                 p={{
                   y: { xs: "0", md: "2.5rem" },
-                  l: { xs: "1rem", md: "2rem" },
+                  l: { xs: "1rem", md: "4rem", xl: "2rem" },
+                  r: { md: "3.5rem", xl: "0" },
                 }}
                 border={{ t: "1px solid", b: { xs: "none", md: "1px solid" } }}
                 borderColor="#E1E4E8"
-                m={{ x: { xs: "-.5rem", md: "-1rem" } }}
+                m={{ x: { xs: "-.5rem", md: "-2.25rem", xl: "-1rem" } }}
               >
                 {heroPoints.map((data, id) => {
                   return (
                     <Div
                       d="flex"
                       key={id}
-                      maxW={{ xs: "auto", md: "18rem" }}
-                      align={{ xs: "start", md: "center" }}
+                      maxW={{ xs: "auto", md: "14rem", xl: "18rem" }}
+                      align="start"
                       p={{
                         t: { xs: "2rem", md: "0" },
                         b: { xs: "1.75rem", md: "0" },
                       }}
+                      m={{ x: { md: id % 2 && "1.5rem" } }}
                       border={{
                         b: { xs: "1px solid", md: "none" },
                       }}
@@ -96,12 +99,12 @@ export default class HomeHero extends Component {
                     >
                       <Image
                         src={data.image}
-                        h="1.5rem"
+                        h={{ xs: "1.5rem", md: "1.25rem", xl: "1.5rem" }}
                         w="auto"
-                        m={{ t: { xs: ".375rem", md: "0" } }}
+                        m={{ t: ".375rem" }}
                       />
                       <Div
-                        m={{ l: "2rem" }}
+                        m={{ l: { xs: "2rem", md: "1.75rem", xl: "2rem" } }}
                         textSize={{ xs: "caption3", md: "caption" }}
                       >
                         <Text tag="span" textWeight="bold" textColor="#000">
