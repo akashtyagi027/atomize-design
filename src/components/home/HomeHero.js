@@ -28,7 +28,7 @@ const heroPoints = [
 
 export default class HomeHero extends Component {
   render() {
-    const { activeToggle } = this.props
+    const { content } = this.props
     return (
       <WebsiteContainer>
         <CustomContainer>
@@ -40,9 +40,7 @@ export default class HomeHero extends Component {
                 textSize={{ xs: "subheader4", md: "display2", xl: "display4" }}
                 m={{ b: { xs: "1.5rem", md: "1rem" } }}
               >
-                {activeToggle === "Figma"
-                  ? "Design interfaces at Scale"
-                  : "Design for Sketch"}
+                {content.heading}
               </Text>
               <Text
                 textSize="paragraph"
@@ -51,9 +49,7 @@ export default class HomeHero extends Component {
                 maxW="39rem"
                 m="auto"
               >
-                Atomize Design System is the most advanced UI design framework
-                that helps designers create beautiful and consistent user
-                interfaces for the web.
+                {content.subHeading}
               </Text>
 
               <Div p={{ x: { md: "85px", xl: "0" } }}>
@@ -87,10 +83,11 @@ export default class HomeHero extends Component {
                     shadow={{ xs: "5", md: "4", xl: "3" }}
                   >
                     <Div
-                      bgImg="./images/Sketch-hero.png"
+                      bgImg={content.image}
                       p={{ b: "76.2%" }}
                       bgSize="cover"
                       bgPos="center"
+                      transition="all .5s ease-in-out"
                     ></Div>
                   </Div>
                 </Div>
@@ -110,7 +107,7 @@ export default class HomeHero extends Component {
                 borderColor="#E1E4E8"
                 m={{ x: { xs: "-.5rem", md: "-2.25rem", xl: "-1rem" } }}
               >
-                {heroPoints.map((data, id) => {
+                {content.heroPoints.map((data, id) => {
                   return (
                     <Div
                       d="flex"

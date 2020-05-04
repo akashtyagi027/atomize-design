@@ -1,4 +1,8 @@
 const theme = {
+  fontFamily: {
+    primary:
+      '"Inter", "galano", "Helvetica", "SF Pro Text", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
+  },
   textSize: {
     size: {
       caption: "12px",
@@ -30,6 +34,7 @@ const theme = {
     primary: "#000",
     violet100: "#5552FF",
     violet200: "#4340FC",
+    violet300: "#9392ff",
     lightGray: "#E1E4E8",
 
     light: "#F1F2F4",

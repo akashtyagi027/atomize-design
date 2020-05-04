@@ -5,6 +5,7 @@ import Accelerate from "../../images/Accelerate.png"
 
 export default class HomeAccelerate extends Component {
   render() {
+    const { content } = this.props
     return (
       <WebsiteContainer p={{ x: { xs: ".75rem", md: "1.5rem", xl: "0" } }}>
         <Div
@@ -25,10 +26,9 @@ export default class HomeAccelerate extends Component {
                   textAlign={{ xs: "center", md: "left" }}
                   maxW={{ md: "20rem", xl: "100%" }}
                 >
-                  <Text tag="span">Accelerate</Text>{" "}
+                  <Text tag="span">{content.heading}</Text>{" "}
                   <Text tag="span" opacity=".4">
-                    your design workflow with ready to use interface elements
-                    and file setup.
+                    {content.text}
                   </Text>
                 </Div>
                 <Button
@@ -36,10 +36,10 @@ export default class HomeAccelerate extends Component {
                   rounded="12px"
                   p={{ y: ".875rem", x: "1.75rem" }}
                   h="3.5rem"
-                  textColor="violet200"
+                  textColor={content.buttonColor}
                   bg="white"
                   border="1px solid"
-                  borderColor="#ECECFF"
+                  borderColor={content.borderColor}
                   textSize="paragraph"
                   textWeight="bold"
                   hoverBg="#fafbfb"
@@ -66,7 +66,7 @@ export default class HomeAccelerate extends Component {
               >
                 <Div
                   pos="absolute"
-                  bgImg="./images/Frame.svg"
+                  bgImg={content.frameImage}
                   p={{ b: "60%" }}
                   w="80%"
                   top="13%"
@@ -77,7 +77,7 @@ export default class HomeAccelerate extends Component {
                 ></Div>
                 <Div
                   pos="absolute"
-                  bgImg="./images/Point-Up-Left.svg"
+                  bgImg={content.chatBubble}
                   p={{ b: "30%" }}
                   w="40%"
                   bottom="22%"
@@ -89,7 +89,7 @@ export default class HomeAccelerate extends Component {
                 ></Div>
                 <Div
                   pos="absolute"
-                  bgImg="./images/Switch-On.svg"
+                  bgImg={content.toggleImage}
                   p={{ b: "10%" }}
                   w="10%"
                   top="38%"
@@ -101,7 +101,7 @@ export default class HomeAccelerate extends Component {
                 ></Div>
                 <Div
                   pos="absolute"
-                  bgImg="./images/Right-Icon.svg"
+                  bgImg={content.input}
                   p={{ b: "13%" }}
                   zIndex="1"
                   w="80%"

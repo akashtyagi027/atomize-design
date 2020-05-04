@@ -17,6 +17,7 @@ class Header extends React.Component {
 
   render() {
     const { mobileHeaderOpen } = this.state
+    const { content } = this.props
     return (
       <Div
         h="4rem"
@@ -38,7 +39,7 @@ class Header extends React.Component {
               justify="space-between"
             >
               <Div>
-                <Image src="./images/Atomize-logo.svg" h="20px" w="109px" />
+                <Image src={content.logo} h="20px" w="109px" />
               </Div>
               <Div d={{ xs: "none", md: "flex" }} align="center">
                 <Text
@@ -55,7 +56,7 @@ class Header extends React.Component {
                   textDecor="underline"
                   textWeight="bold"
                   textSize="caption"
-                  textColor="violet200"
+                  textColor={content.textColor}
                   cursor="pointer"
                   m={{ r: "3rem" }}
                 >
@@ -65,7 +66,7 @@ class Header extends React.Component {
                   textColor="white"
                   textWeight="bold"
                   rounded="8px"
-                  bg="violet100"
+                  bg={content.buttonColor}
                 >
                   Buy Now
                 </Button>
@@ -105,7 +106,10 @@ class Header extends React.Component {
 
             {/* Mobile Header */}
 
-            <MobileHeaderMenu mobileHeaderOpen={mobileHeaderOpen} />
+            <MobileHeaderMenu
+              mobileHeaderOpen={mobileHeaderOpen}
+              content={content}
+            />
           </CustomContainer>
         </WebsiteContainer>
       </Div>

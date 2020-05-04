@@ -1,7 +1,3 @@
-// ######################################## //
-// ## Body.SCSS ## //
-// ######################################## //
-
 @import url("https://rsms.me/inter/inter.css");
 html {
   font-family: "Inter", sans-serif;
@@ -10,8 +6,4 @@ html {
   html {
     font-family: "Inter var", sans-serif;
   }
-}
-
-body {
-  background: #fafbfb;
 }

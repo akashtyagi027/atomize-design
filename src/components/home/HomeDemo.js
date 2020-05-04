@@ -1,30 +1,7 @@
 import React, { Component } from "react"
-import { Div, Text, Button, Image } from "atomize"
+import { Div, Text, Button, Image, Icon } from "atomize"
 import CustomContainer from "../common/CustomContainer"
 import WebsiteContainer from "../common/WebsiteContainer"
-
-const points = [
-  {
-    image: "./images/Success.svg",
-    text: "FREE future updates",
-  },
-  {
-    image: "./images/Success.svg",
-    text: "Auto-updating Style Guide",
-  },
-  {
-    image: "./images/Success.svg",
-    text: "UI components",
-  },
-  {
-    image: "./images/Success.svg",
-    text: "Theme Setup and Type system",
-  },
-  {
-    image: "./images/Success.svg",
-    text: "Example screens (Coming soon)",
-  },
-]
 
 export default class HomeDemo extends Component {
   state = { plan: "individual" }
@@ -35,6 +12,8 @@ export default class HomeDemo extends Component {
 
   render() {
     const { plan } = this.state
+    const { content, activeToggle } = this.props
+
     return (
       <WebsiteContainer>
         <CustomContainer p={{ x: { xs: ".75rem", md: "1.5rem", xl: "7rem" } }}>
@@ -52,8 +31,7 @@ export default class HomeDemo extends Component {
               maxW="43rem"
               m="auto"
             >
-              Trusted by 5000+ designers from companies like Blurb,
-              Thoughtworks, Latch and more
+              {content.heading}
             </Text>
             <Div
               m={{ t: { xs: "3rem", md: "5.5rem", xl: "4.5rem" } }}
@@ -65,7 +43,16 @@ export default class HomeDemo extends Component {
               }}
               rounded="32px"
               shadow="1"
+              pos="relative"
             >
+              <Image
+                src={content.logo}
+                h="40px"
+                w="auto"
+                pos="absolute"
+                right={{ xs: "24px", md: "40px" }}
+                top="40px"
+              />
               <Div
                 p={{ x: { xs: "1.75rem", md: "4rem", xl: "5rem" } }}
                 d="flex"
@@ -92,7 +79,7 @@ export default class HomeDemo extends Component {
                         id="individual"
                         onClick={this.changePlan}
                         cursor="pointer"
-                        className={plan === "individual" ? "active" : ""}
+                        textColor={plan === "individual" && content.color}
                       >
                         Individual
                       </Text>
@@ -103,7 +90,7 @@ export default class HomeDemo extends Component {
                         tag="span"
                         id="team"
                         onClick={this.changePlan}
-                        className={plan === "team" ? "active" : ""}
+                        textColor={plan === "team" && content.color}
                         cursor="pointer"
                       >
                         Team
@@ -139,9 +126,10 @@ export default class HomeDemo extends Component {
                       <Button
                         p={{ y: "10px" }}
                         minW={{ xs: "100%", md: "14.5rem" }}
-                        bg="violet100"
+                        bg={content.color}
                         rounded="12px"
                         textSize="paragraph"
+                        textColor={content.textColor}
                         textWeight="bold"
                         m={{
                           r: { xs: "0", md: "1rem" },
@@ -196,7 +184,7 @@ export default class HomeDemo extends Component {
                     Full version includes:
                   </Text>
                   <Div m={{ t: "1rem" }}>
-                    {points.map((point, id) => (
+                    {content.points.map((point, id) => (
                       <Div
                         key={id}
                         d="flex"
@@ -206,7 +194,7 @@ export default class HomeDemo extends Component {
                       >
                         <Image
                           src={point.image}
-                          className="check"
+                          className={activeToggle === "Figma" && "check"}
                           h="1.5rem"
                           w="auto"
                           m={{

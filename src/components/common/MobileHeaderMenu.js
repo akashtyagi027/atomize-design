@@ -46,7 +46,7 @@ export default class MobileHeaderMenu extends Component {
 
   render() {
     const { height } = this.state
-    const { mobileHeaderOpen } = this.props
+    const { mobileHeaderOpen, content } = this.props
 
     const duration = 300
 
@@ -91,14 +91,14 @@ export default class MobileHeaderMenu extends Component {
                 textSize="paragraph"
                 textWeight="bold"
                 textAlign="center"
-                border={{ t: "1px solid" }}
-                borderColor="lightGray"
+                // border={{ t: "1px solid" }}
+                // borderColor="lightGray"
               >
                 <Text
                   p={{ t: "24px", b: "28px" }}
                   textDecor="underline"
                   opacity=".56"
-                  border={{ b: "1px solid" }}
+                  border={{ y: "1px solid" }}
                   borderColor="lightGray"
                 >
                   Atomize React ↗️
@@ -107,7 +107,7 @@ export default class MobileHeaderMenu extends Component {
                   p={{ t: "32px", b: "20px" }}
                   border={{ b: "1px solid" }}
                   borderColor="lightGray"
-                  textColor="violet200"
+                  textColor={content.textColor}
                 >
                   TRY DEMO
                 </Text>
@@ -118,7 +118,7 @@ export default class MobileHeaderMenu extends Component {
                     textSize="paragraph"
                     textWeight="bold"
                     h="48px"
-                    bg="violet100"
+                    bg={content.buttonColor}
                   >
                     Buy Now
                   </Button>

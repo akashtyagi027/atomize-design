@@ -23,6 +23,8 @@ const cards = [
 
 export default class HomeInside extends Component {
   render() {
+    const { content } = this.props
+
     return (
       <WebsiteContainer>
         <CustomContainer p={{ x: { xs: "12px", md: "64px", xl: "7rem" } }}>
@@ -39,7 +41,7 @@ export default class HomeInside extends Component {
                 textWeight="bold"
                 m={{ b: "1.5rem" }}
               >
-                What’s inside 👀
+                {content.heading}
               </Text>
               <Text
                 maxW={{ md: "21rem", xl: "35rem" }}
@@ -47,9 +49,7 @@ export default class HomeInside extends Component {
                 textWeight="bold"
                 opacity=".56"
               >
-                Starting your next design project? No need to start from
-                scratch. A huge set of base elements and pre-designed components
-                are already set up for you. Just get started!
+                {content.text}
               </Text>
             </Div>
 
@@ -59,7 +59,7 @@ export default class HomeInside extends Component {
               flexDir={{ xs: "column", xl: "row" }}
               m={{ t: { xs: "4.25rem", md: "3rem", xl: "6rem" } }}
             >
-              {cards.map((card, id) => {
+              {content.cards.map((card, id) => {
                 return (
                   <Div
                     key={id}
