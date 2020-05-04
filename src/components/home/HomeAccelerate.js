@@ -77,7 +77,7 @@ export default class HomeAccelerate extends Component {
                 ></Div>
                 <Div
                   pos="absolute"
-                  bgImg="./images/Point-Up-left.svg"
+                  bgImg="./images/Point-Up-Left.svg"
                   p={{ b: "30%" }}
                   w="40%"
                   bottom="22%"
@@ -89,7 +89,7 @@ export default class HomeAccelerate extends Component {
                 ></Div>
                 <Div
                   pos="absolute"
-                  bgImg="./images/Switch-on.svg"
+                  bgImg="./images/Switch-On.svg"
                   p={{ b: "10%" }}
                   w="10%"
                   top="38%"
