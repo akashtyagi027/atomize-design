@@ -6,6 +6,8 @@ import HomeAccelerate from "../components/home/HomeAccelerate"
 import HomeInside from "../components/home/HomeInside"
 import HomeDemo from "../components/home/HomeDemo"
 import Header from "../components/common/Header"
+import Footer from "../components/common/Footer"
+import luxy from "luxy.js"
 
 const toggleData = {
   Sketch: {
@@ -216,6 +218,12 @@ const data = {
 export default class HomePage extends Component {
   state = { activeToggle: "Sketch" }
 
+  componentDidMount() {
+    luxy.init({
+      wrapperSpeed: "0.9",
+    })
+  }
+
   toggle = id => {
     this.setState({ activeToggle: id })
   }
@@ -226,7 +234,7 @@ export default class HomePage extends Component {
     return (
       <Div>
         <Header content={data[activeToggle].header} />
-        <Div>
+        <Div id="luxy">
           <ToggleComponent
             toggleId={this.toggle}
             data={toggleData}
@@ -235,20 +243,33 @@ export default class HomePage extends Component {
           <Div m={{ t: "3rem" }}>
             <HomeHero content={data[activeToggle].heroSection} />
           </Div>
-          <Div m={{ t: { xs: "5.5rem", md: "5rem", xl: "10.5rem" } }}>
+          <Div
+            m={{
+              t: { xs: "5.5rem", md: "5rem", xl: "10.5rem" },
+            }}
+          >
             <HomeAccelerate content={data[activeToggle].homeAccelerate} />
           </Div>
-          <Div m={{ t: { xs: "4.5rem", md: "5rem", xl: "10.5rem" } }}>
+          <Div
+            m={{
+              t: { xs: "4.5rem", md: "5rem", xl: "10.5rem" },
+            }}
+          >
             <HomeInside content={data[activeToggle].homeInside} />
           </Div>
           <Div
-            m={{ t: { xs: "4rem", md: "5rem", xl: "9.75rem" }, b: "5.5rem" }}
+            m={{
+              t: { xs: "4rem", md: "5rem", xl: "9.75rem" },
+              b: "5.5rem",
+            }}
           >
             <HomeDemo
               content={data[activeToggle].homeDemo}
               activeToggle={activeToggle}
             />
           </Div>
+
+          <Footer />
         </Div>
       </Div>
     )

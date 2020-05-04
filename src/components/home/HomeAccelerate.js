@@ -2,13 +2,8 @@ import React, { Component } from "react"
 import { Div, Text, Row, Col, Button, Image } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
 import Accelerate from "../../images/Accelerate.png"
-import luxy from "luxy.js"
 
 export default class HomeAccelerate extends Component {
-  componentDidMount() {
-    luxy.init()
-  }
-
   render() {
     const { content } = this.props
     return (
