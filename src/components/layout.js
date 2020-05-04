@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
     <>
       <ThemeProvider theme={theme}>
         <StyleReset />
-        <div>
+        <div id="luxy">
           <main>{children}</main>
         </div>
       </ThemeProvider>

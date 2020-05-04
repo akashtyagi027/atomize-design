@@ -2,8 +2,13 @@ import React, { Component } from "react"
 import { Div, Text, Row, Col, Button, Image } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
 import Accelerate from "../../images/Accelerate.png"
+import luxy from "luxy.js"
 
 export default class HomeAccelerate extends Component {
+  componentDidMount() {
+    luxy.init()
+  }
+
   render() {
     const { content } = this.props
     return (
@@ -69,23 +74,29 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.frameImage}
                   p={{ b: "60%" }}
                   w="80%"
-                  top="13%"
+                  top="25%"
                   left="4%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
+                  className="luxy-el"
+                  data-speed-y="-4"
+                  data-offset="60"
                 ></Div>
                 <Div
                   pos="absolute"
                   bgImg={content.chatBubble}
                   p={{ b: "30%" }}
                   w="40%"
-                  bottom="22%"
+                  bottom="5%"
                   zIndex="1"
                   right="2%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
+                  className="luxy-el"
+                  data-speed-y="-6"
+                  data-offset="90"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -98,6 +109,9 @@ export default class HomeAccelerate extends Component {
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
+                  className="luxy-el"
+                  data-speed-y="-6"
+                  data-offset="160"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -105,11 +119,14 @@ export default class HomeAccelerate extends Component {
                   p={{ b: "13%" }}
                   zIndex="1"
                   w="80%"
-                  bottom="12%"
+                  bottom="5%"
                   left="7%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
+                  className="luxy-el"
+                  data-speed-y="-5"
+                  data-offset="100"
                 ></Div>
               </Div>
             </Col>

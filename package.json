@@ -18,6 +18,7 @@
     "gatsby-plugin-styletron": "^4.2.4",
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-sharp": "^2.4.7",
+    "luxy.js": "^0.1.0",
     "node-sass": "^4.14.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
