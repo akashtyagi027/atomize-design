@@ -83,7 +83,7 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.chatBubble}
                   p={{ b: "30%" }}
                   w="40%"
-                  bottom="5%"
+                  bottom={{ xs: "2%", md: "5%" }}
                   zIndex="1"
                   right="2%"
                   bgSize="contain"
@@ -98,7 +98,7 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.toggleImage}
                   p={{ b: "10%" }}
                   w="10%"
-                  top="38%"
+                  top={{ xs: "33%", md: "38%" }}
                   zIndex="1"
                   right="6%"
                   bgSize="contain"

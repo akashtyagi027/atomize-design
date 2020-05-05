@@ -166,11 +166,11 @@ export default class HomeDemo extends Component {
                   flexGrow="1 1 50%"
                   m={{
                     t: { xs: "3.25rem", md: "1.75rem", xl: "0" },
-                    x: { xs: "-1.75rem", md: "-5rem", xl: "0" },
+                    x: { xs: "-1.75rem", md: "-4rem", xl: "0" },
                   }}
                   p={{
                     t: { xs: "1.5rem", md: "2.5rem", xl: "0" },
-                    x: { xs: "1.75rem", md: "5rem", xl: "0" },
+                    x: { xs: "1.75rem", md: "4rem", xl: "0" },
                   }}
                   border={{ t: { xs: "1px solid", xl: "none" } }}
                   borderColor="dark"
