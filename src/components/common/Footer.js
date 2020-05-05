@@ -132,12 +132,15 @@ export default class Footer extends Component {
                         >
                           {links.text2 ? links.text2 : ""}
                         </Anchor>
-                        <Div d={links.icon1 ? "flex" : "none"}>
+                        <Div
+                          d={links.icon1 ? "flex" : "none"}
+                          justify="space-between"
+                        >
                           <Anchor href={links.iconLink1}>
                             <Image
                               src={links.icon1 ? links.icon1 : ""}
                               h="1.5rem"
-                              m={{ r: ".625rem" }}
+                              //m={{ r: ".625rem" }}
                               cursor="pointer"
                             />
                           </Anchor>
