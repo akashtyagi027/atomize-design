@@ -75,8 +75,8 @@ export default class HomeAccelerate extends Component {
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-4"
-                  data-offset="60"
+                  data-speed-y="-7"
+                  data-offset="120"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -90,8 +90,8 @@ export default class HomeAccelerate extends Component {
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-6"
-                  data-offset="90"
+                  data-speed-y="-12"
+                  data-offset="180"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -105,8 +105,8 @@ export default class HomeAccelerate extends Component {
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-6"
-                  data-offset="160"
+                  data-speed-y="-15"
+                  data-offset="300"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -120,8 +120,8 @@ export default class HomeAccelerate extends Component {
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-5"
-                  data-offset="100"
+                  data-speed-y="-6"
+                  data-offset="120"
                 ></Div>
               </Div>
             </Col>

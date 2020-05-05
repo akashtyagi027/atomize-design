@@ -7,7 +7,7 @@ import HomeInside from "../components/home/HomeInside"
 import HomeDemo from "../components/home/HomeDemo"
 import Header from "../components/common/Header"
 import Footer from "../components/common/Footer"
-import luxy from "luxy.js"
+// import luxy from "luxy.js"
 
 const toggleData = {
   Sketch: {
@@ -219,6 +219,7 @@ export default class HomePage extends Component {
   state = { activeToggle: "Sketch" }
 
   componentDidMount() {
+    const luxy = require("luxy.js")
     luxy.init({
       wrapperSpeed: "0.9",
     })
