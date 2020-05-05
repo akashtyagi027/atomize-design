@@ -26,6 +26,7 @@ const data = {
       logo: "./images/Atomize-sketch.svg",
       textColor: "#F07300",
       buttonColor: "#FF8F00",
+      demoLink: "https://gumroad.com/l/atomize-demo",
     },
     heroSection: {
       heading: "Design interfaces at Scale",
@@ -53,6 +54,8 @@ const data = {
 
     homeAccelerate: {
       heading: "Accelerate",
+      previewLink:
+        "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
       text:
         "your design workflow with ready to use interface elements and file setup.",
       buttonColor: "#F07300",
@@ -92,6 +95,8 @@ const data = {
       color: "#FFAD0D",
       textColor: "black",
       logo: "./images/logo-sketch.svg",
+      demoLink: "https://gumroad.com/l/atomize-demo",
+      purchaseLink: "https://gumroad.com/l/atomize",
       points: [
         {
           image: "./images/Success-2.svg",
@@ -122,6 +127,7 @@ const data = {
       logo: "./images/Atomize-figma.svg",
       textColor: "violet200",
       buttonColor: "violet100",
+      demoLink: "https://gumroad.com/l/atomizefigmademo",
     },
 
     heroSection: {
@@ -150,6 +156,8 @@ const data = {
 
     homeAccelerate: {
       heading: "Accelerate",
+      previewLink:
+        "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
       text:
         "your design workflow with ready to use interface elements and file setup.",
       buttonColor: "violet200",
@@ -189,6 +197,8 @@ const data = {
       color: "violet100",
       textColor: "white",
       logo: "./images/logo-figma.svg",
+      demoLink: "https://gumroad.com/l/atomizefigmademo",
+      purchaseLink: "https://gumroad.com/l/atomizefigma",
       points: [
         {
           image: "./images/Success.svg",
@@ -231,7 +241,6 @@ export default class HomePage extends Component {
 
   render() {
     const { activeToggle } = this.state
-    console.log(activeToggle)
     return (
       <Div>
         <Header content={data[activeToggle].header} />

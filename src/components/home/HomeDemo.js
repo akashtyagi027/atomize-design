@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Div, Text, Button, Image, Icon } from "atomize"
+import { Div, Text, Button, Image, Anchor } from "atomize"
 import CustomContainer from "../common/CustomContainer"
 import WebsiteContainer from "../common/WebsiteContainer"
 
@@ -22,6 +22,7 @@ export default class HomeDemo extends Component {
             p={{ t: { xs: "4rem", md: "3.125rem" } }}
             border={{ t: "1px solid" }}
             borderColor="lightGray"
+            id="home-demo"
           >
             <Text
               textAlign="center"
@@ -123,33 +124,37 @@ export default class HomeDemo extends Component {
                       flexDir={{ xs: "column-reverse", md: "row" }}
                       m={{ b: "1rem" }}
                     >
-                      <Button
-                        p={{ y: "10px" }}
-                        minW={{ xs: "100%", md: "14.5rem" }}
-                        bg={content.color}
-                        rounded="12px"
-                        textSize="paragraph"
-                        textColor={content.textColor}
-                        textWeight="bold"
-                        m={{
-                          r: { xs: "0", md: "1rem" },
-                          t: { xs: "1rem", md: "0" },
-                        }}
-                        h="auto"
-                      >
-                        Purchase Now
-                      </Button>
-                      <Button
-                        p={{ y: "10px" }}
-                        minW={{ xs: "100%", md: "11rem" }}
-                        bg="dark"
-                        textSize="paragraph"
-                        textWeight="bold"
-                        rounded="12px"
-                        h="auto"
-                      >
-                        Try FREE Demo
-                      </Button>
+                      <Anchor href={content.purchaseLink} target="_blank">
+                        <Button
+                          p={{ y: "10px" }}
+                          minW={{ xs: "100%", md: "14.5rem" }}
+                          bg={content.color}
+                          rounded="12px"
+                          textSize="paragraph"
+                          textColor={content.textColor}
+                          textWeight="bold"
+                          m={{
+                            r: { xs: "0", md: "1rem" },
+                            t: { xs: "1rem", md: "0" },
+                          }}
+                          h="auto"
+                        >
+                          Purchase Now
+                        </Button>
+                      </Anchor>
+                      <Anchor href={content.demoLink} target="_blank">
+                        <Button
+                          p={{ y: "10px" }}
+                          minW={{ xs: "100%", md: "11rem" }}
+                          bg="dark"
+                          textSize="paragraph"
+                          textWeight="bold"
+                          rounded="12px"
+                          h="auto"
+                        >
+                          Try FREE Demo
+                        </Button>
+                      </Anchor>
                     </Div>
                     <Text
                       textWeight="600"

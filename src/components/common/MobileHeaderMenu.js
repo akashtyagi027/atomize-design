@@ -1,5 +1,7 @@
 import React, { Component } from "react"
-import { Div, Text, Button } from "atomize"
+import { Link } from "react-scroll"
+
+import { Div, Text, Button, Anchor } from "atomize"
 import { Transition } from "react-transition-group"
 import {
   disableBodyScroll,
@@ -46,7 +48,7 @@ export default class MobileHeaderMenu extends Component {
 
   render() {
     const { height } = this.state
-    const { mobileHeaderOpen, content } = this.props
+    const { mobileHeaderOpen, content, closeHeader } = this.props
 
     const duration = 300
 
@@ -87,41 +89,71 @@ export default class MobileHeaderMenu extends Component {
             shadow="2"
           >
             <Div ref={this.mobileHeaderMenu} p={{ t: "91px", x: "16px" }}>
-              <Div
-                textSize="paragraph"
-                textWeight="bold"
-                textAlign="center"
-                // border={{ t: "1px solid" }}
-                // borderColor="lightGray"
-              >
-                <Text
+              <Div textAlign="center">
+                <Anchor
+                  href="https://atomizecode.com/"
+                  target="_blank"
                   p={{ t: "24px", b: "28px" }}
                   textDecor="underline"
                   opacity=".56"
+                  textColor="black"
+                  textSize="paragraph"
+                  textWeight="bold"
                   border={{ y: "1px solid" }}
                   borderColor="lightGray"
+                  d="block"
                 >
                   Atomize React ↗️
-                </Text>
-                <Text
+                  {/* <Text
+                    p={{ t: "24px", b: "28px" }}
+                    textDecor="underline"
+                    opacity=".56"
+                    border={{ y: "1px solid" }}
+                    borderColor="lightGray"
+                  >
+                    Atomize React ↗️
+                  </Text> */}
+                </Anchor>
+                <Anchor
+                  href={content.demoLink}
+                  target="_blank"
+                  textSize="paragraph"
+                  textWeight="bold"
                   p={{ t: "32px", b: "20px" }}
                   border={{ b: "1px solid" }}
                   borderColor="lightGray"
                   textColor={content.textColor}
+                  d="block"
                 >
                   TRY DEMO
-                </Text>
-                <Div p={{ t: "32px", b: "52px" }}>
-                  <Button
-                    m="auto"
-                    minW="312px"
-                    textSize="paragraph"
-                    textWeight="bold"
-                    h="48px"
-                    bg={content.buttonColor}
+                  {/* <Text
+                    p={{ t: "32px", b: "20px" }}
+                    border={{ b: "1px solid" }}
+                    borderColor="lightGray"
+                    textColor={content.textColor}
                   >
-                    Buy Now
-                  </Button>
+                    TRY DEMO
+                  </Text> */}
+                </Anchor>
+                <Div p={{ t: "32px", b: "52px" }}>
+                  <Link
+                    to="home-demo"
+                    smooth={"easeInOutQuad"}
+                    duration={900}
+                    offset={-50}
+                  >
+                    <Button
+                      m="auto"
+                      minW="312px"
+                      textSize="paragraph"
+                      textWeight="bold"
+                      h="48px"
+                      bg={content.buttonColor}
+                      onClick={closeHeader}
+                    >
+                      Buy Now
+                    </Button>
+                  </Link>
                 </Div>
               </Div>
             </Div>

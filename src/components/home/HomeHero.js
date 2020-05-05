@@ -100,7 +100,7 @@ export default class HomeHero extends Component {
                 textAlign="left"
                 p={{
                   y: { xs: "0", md: "2.5rem" },
-                  l: { xs: "1rem", md: "4rem", xl: "2rem" },
+                  l: { md: "4rem", xl: "2rem" },
                   r: { md: "3.5rem", xl: "0" },
                 }}
                 border={{ t: "1px solid", b: { xs: "none", md: "1px solid" } }}
@@ -117,6 +117,7 @@ export default class HomeHero extends Component {
                       p={{
                         t: { xs: "2rem", md: "0" },
                         b: { xs: "1.75rem", md: "0" },
+                        l: { xs: "1rem", md: "0" },
                       }}
                       m={{ x: { md: id % 2 && "1.5rem" } }}
                       border={{

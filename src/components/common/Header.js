@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import { Div, Text, Image, Button } from "atomize"
+import { Link } from "react-scroll"
+
+import { Div, Text, Image, Button, Anchor } from "atomize"
 import WebsiteContainer from "./WebsiteContainer"
 import CustomContainer from "./CustomContainer"
 import MobileHeaderMenu from "./MobileHeaderMenu"
@@ -42,34 +42,44 @@ class Header extends React.Component {
                 <Image src={content.logo} h="20px" w="109px" />
               </Div>
               <Div d={{ xs: "none", md: "flex" }} align="center">
-                <Text
+                <Anchor
+                  href="https://atomizecode.com/"
+                  textColor="black"
+                  opacity=".56"
+                  target="_blank"
                   textDecor="underline"
                   textWeight="bold"
                   textSize="caption"
-                  opacity=".56"
-                  cursor="pointer"
                   m={{ r: "3rem" }}
                 >
                   Atomize React↗️
-                </Text>
-                <Text
+                </Anchor>
+                <Anchor
+                  href={content.demoLink}
                   textDecor="underline"
                   textWeight="bold"
                   textSize="caption"
                   textColor={content.textColor}
-                  cursor="pointer"
                   m={{ r: "3rem" }}
+                  target="_blank"
                 >
                   TRY DEMO
-                </Text>
-                <Button
-                  textColor="white"
-                  textWeight="bold"
-                  rounded="8px"
-                  bg={content.buttonColor}
+                </Anchor>
+                <Link
+                  to="home-demo"
+                  smooth={"easeInOutQuad"}
+                  duration={900}
+                  offset={-50}
                 >
-                  Buy Now
-                </Button>
+                  <Button
+                    textColor="white"
+                    textWeight="bold"
+                    rounded="8px"
+                    bg={content.buttonColor}
+                  >
+                    Buy Now
+                  </Button>
+                </Link>
               </Div>
 
               {/* Mobile Header */}
@@ -109,6 +119,7 @@ class Header extends React.Component {
             <MobileHeaderMenu
               mobileHeaderOpen={mobileHeaderOpen}
               content={content}
+              closeHeader={this.toggleMobileHeader}
             />
           </CustomContainer>
         </WebsiteContainer>

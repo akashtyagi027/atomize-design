@@ -15,7 +15,7 @@ export default class ToggleComponent extends Component {
       <Div
         m={{ t: { xs: "8.125rem", md: "9.5rem" }, x: "auto" }}
         d="flex"
-        justify="center"
+        justify="space-between"
         maxW="12rem"
         textAlign="center"
         p="4px"
@@ -36,6 +36,7 @@ export default class ToggleComponent extends Component {
                 bg="white"
                 textSize="caption"
                 textWeight="bold"
+                rounded="8px"
                 className={
                   activeToggle === data[info].text ? "active" : "btn-toggle"
                 }

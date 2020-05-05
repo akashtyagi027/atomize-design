@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Div, Text, Row, Col, Image } from "atomize"
+import { Div, Text, Row, Col, Image, Anchor } from "atomize"
 
 import CustomContainer from "./CustomContainer"
 import WebsiteContainer from "../common/WebsiteContainer"
@@ -8,17 +8,23 @@ const footerLinks = [
   {
     heading: "Product",
     text1: "Need support?",
+    link1: "mailto:contact@atomizedesign.com",
     text2: "Request discount",
+    link2: "",
   },
   {
     heading: "Atomize React",
     text1: "Github ↗️ ",
+    link1: "https://github.com/proksh/atomize",
     text2: "Documentation ↗️ ",
+    link2: "https://atomizecode.com/docs/react/intro/",
   },
   {
     heading: "Follow us",
     icon1: "./images/Twitter.svg",
+    iconLink1: "https://twitter.com/atomize_design",
     icon2: "./images/Fb.svg",
+    iconLink2: "https://www.facebook.com/atomizedesign/",
   },
 ]
 
@@ -84,7 +90,7 @@ export default class Footer extends Component {
                     p={{
                       l: { xs: "0.5rem", md: "0", xl: "4.5rem" },
                     }}
-                    maxW={{ md: "30.75rem", xl: "auto" }}
+                    maxW={{ md: "30.75rem", xl: "100%" }}
                     m={{ md: "0 0 0  auto", xl: "0" }}
                   >
                     {footerLinks.map((links, id) => (
@@ -102,35 +108,46 @@ export default class Footer extends Component {
                         >
                           {links.heading}
                         </Text>
-                        <Text
-                          m={{ b: ".625rem" }}
+                        <Anchor
+                          href={links.link1}
                           textSize="caption2"
                           textWeight="600"
                           opacity=".4"
-                          cursor="pointer"
+                          textColor="black"
+                          m={{ b: ".625rem" }}
+                          d="block"
+                          textDecor="none"
                         >
                           {links.text1 ? links.text1 : ""}
-                        </Text>
-                        <Text
+                        </Anchor>
+                        <Anchor
+                          href={links.link2}
                           textSize="caption2"
                           opacity=".4"
                           cursor="pointer"
                           textWeight="600"
+                          d="block"
+                          textColor="black"
+                          textDecor="none"
                         >
                           {links.text2 ? links.text2 : ""}
-                        </Text>
+                        </Anchor>
                         <Div d={links.icon1 ? "flex" : "none"}>
-                          <Image
-                            src={links.icon1 ? links.icon1 : ""}
-                            h="1.5rem"
-                            m={{ r: ".625rem" }}
-                            cursor="pointer"
-                          />
-                          <Image
-                            src={links.icon2 ? links.icon2 : ""}
-                            h="1.5rem"
-                            cursor="pointer"
-                          />
+                          <Anchor href={links.iconLink1}>
+                            <Image
+                              src={links.icon1 ? links.icon1 : ""}
+                              h="1.5rem"
+                              m={{ r: ".625rem" }}
+                              cursor="pointer"
+                            />
+                          </Anchor>
+                          <Anchor href={links.iconLink2}>
+                            <Image
+                              src={links.icon2 ? links.icon2 : ""}
+                              h="1.5rem"
+                              cursor="pointer"
+                            />
+                          </Anchor>
                         </Div>
                       </Div>
                     ))}

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import { Div, Text, Row, Col, Button, Image } from "atomize"
+import { Div, Text, Row, Col, Button, Anchor } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
-import Accelerate from "../../images/Accelerate.png"
 
 export default class HomeAccelerate extends Component {
   render() {
@@ -31,21 +30,24 @@ export default class HomeAccelerate extends Component {
                     {content.text}
                   </Text>
                 </Div>
-                <Button
-                  m={{ t: "3.5rem", x: { xs: "auto", md: "0" } }}
-                  rounded="12px"
-                  p={{ y: ".875rem", x: "1.75rem" }}
-                  h="3.5rem"
-                  textColor={content.buttonColor}
-                  bg="white"
-                  border="1px solid"
-                  borderColor={content.borderColor}
-                  textSize="paragraph"
-                  textWeight="bold"
-                  hoverBg="#fafbfb"
-                >
-                  See full preview ↗️
-                </Button>
+                <Anchor href={content.previewLink} target="_blank">
+                  <Button
+                    m={{ t: "3.5rem", x: { xs: "auto", md: "0" } }}
+                    rounded="12px"
+                    p={{ y: ".875rem", x: "1.75rem" }}
+                    h="3.5rem"
+                    textColor={content.buttonColor}
+                    bg="white"
+                    border="1px solid"
+                    borderColor={content.borderColor}
+                    textSize="paragraph"
+                    textWeight="bold"
+                    hoverBg="#fafbfb"
+                    shadow="1"
+                  >
+                    See full preview ↗️
+                  </Button>
+                </Anchor>
               </Div>
             </Col>
             <Col size={{ xs: "0", md: "1" }}></Col>
@@ -69,7 +71,7 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.frameImage}
                   p={{ b: "60%" }}
                   w="80%"
-                  top="25%"
+                  top={{ xs: "35%", md: "10%", xl: "25%" }}
                   left="4%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
@@ -83,30 +85,30 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.chatBubble}
                   p={{ b: "30%" }}
                   w="40%"
-                  bottom={{ xs: "2%", md: "5%" }}
+                  bottom={{ xs: "-5%", md: "24%", xl: "5%" }}
                   zIndex="1"
                   right="2%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-12"
-                  data-offset="180"
+                  data-speed-y="-8"
+                  data-offset="130"
                 ></Div>
                 <Div
                   pos="absolute"
                   bgImg={content.toggleImage}
                   p={{ b: "10%" }}
                   w="10%"
-                  top={{ xs: "33%", md: "38%" }}
+                  top={{ xs: "42%", md: "11%", xl: "38%" }}
                   zIndex="1"
                   right="6%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
                   className="luxy-el"
-                  data-speed-y="-15"
-                  data-offset="300"
+                  data-speed-y="-10"
+                  data-offset="250"
                 ></Div>
                 <Div
                   pos="absolute"
@@ -114,7 +116,7 @@ export default class HomeAccelerate extends Component {
                   p={{ b: "13%" }}
                   zIndex="1"
                   w="80%"
-                  bottom="5%"
+                  bottom={{ xs: "-1%", md: "20%", xl: "5%" }}
                   left="7%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
