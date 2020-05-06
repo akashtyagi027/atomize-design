@@ -100,12 +100,7 @@ export default class HomeDemo extends Component {
                       </Text>
                     </Div>
                     <Div m={{ t: "1.5rem", b: { xs: "2.5rem", md: "2rem" } }}>
-                      <Text
-                        tag="span"
-                        textSize="display4"
-                        textWeight="bold"
-                        style={{ lineHeight: "64px" }}
-                      >
+                      <Text tag="span" textSize="display4" textWeight="bold">
                         {plan === "individual" ? "$39" : "$59"}
                       </Text>
                       <Text

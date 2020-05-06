@@ -4,9 +4,8 @@ import { Div, Text, Image, Button } from "atomize"
 export default class ToggleComponent extends Component {
   //state = { active: "Sketch" }
 
-  toggle = e => {
-    this.props.toggleId(e.target.id)
-    // this.setState({ active: button })
+  toggle = name => {
+    this.props.toggleId(name)
   }
 
   render() {
@@ -25,14 +24,13 @@ export default class ToggleComponent extends Component {
       >
         {Object.keys(data).map((info, id) => {
           return (
-            <Div key={id}>
+            <Div key={id} onClick={() => this.toggle(data[info].text)}>
               <Button
-                onClick={this.toggle}
+                // onClick={() => this.toggle(data[info].tex)}
                 d="flex"
                 p={{ l: "11px", r: id % 2 ? "15px" : "13px", y: ".375rem" }}
                 cursor="pointer"
                 m="0"
-                id={data[info].text}
                 h="2rem"
                 bg="white"
                 textSize="caption"
@@ -44,7 +42,6 @@ export default class ToggleComponent extends Component {
                 prefix={
                   <Image
                     m={{ r: ".5rem" }}
-                    id={data[info].text}
                     src={data[info].image}
                     h="20px"
                     w="auto"
