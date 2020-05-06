@@ -105,7 +105,7 @@ export default class MobileHeaderMenu extends Component {
                 >
                   Atomize React
                   <Image
-                    src="./images/Arrow.svg"
+                    src="./images/arrow.svg"
                     h="10px"
                     p={{ l: "5px" }}
                     w="8px"
