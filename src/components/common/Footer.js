@@ -18,7 +18,7 @@ const footerLinks = [
     link1: "https://github.com/proksh/atomize",
     text2: "Documentation",
     link2: "https://atomizecode.com/docs/react/intro/",
-    arrow: "./images/Arrow.svg",
+    arrow: "./images/arrow.svg",
   },
   {
     heading: "Follow us",
@@ -124,7 +124,7 @@ export default class Footer extends Component {
                             {links.text1 ? links.text1 : ""}
                             {links.arrow && (
                               <Image
-                                src="./images/Arrow.svg"
+                                src="./images/arrow.svg"
                                 h="10px"
                                 p={{ l: "5px" }}
                                 w="8px"
@@ -147,7 +147,7 @@ export default class Footer extends Component {
                           {links.text2 ? links.text2 : ""}
                           {links.arrow && (
                             <Image
-                              src="./images/Arrow.svg"
+                              src="./images/arrow.svg"
                               p={{ l: "5px" }}
                               h="10px"
                               w="8px"

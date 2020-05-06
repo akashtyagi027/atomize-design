@@ -53,7 +53,7 @@ class Header extends React.Component {
                   m={{ r: "3rem" }}
                 >
                   Atomize React{" "}
-                  <Image src="./images/Arrow.svg" h="10px" w="6px" />
+                  <Image src="./images/arrow.svg" h="10px" w="6px" />
                 </Anchor>
                 <Anchor
                   href={content.demoLink}

@@ -51,7 +51,7 @@ export default class HomeAccelerate extends Component {
                   >
                     See full preview
                     <Image
-                      src="./images/Arrow.svg"
+                      src="./images/arrow.svg"
                       m={{ l: "5px" }}
                       h="10px"
                       w="8px"
