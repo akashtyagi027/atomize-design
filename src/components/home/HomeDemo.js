@@ -71,13 +71,14 @@ export default class HomeDemo extends Component {
                     <Div
                       border={{ b: "1px solid" }}
                       borderColor="rgba(255,255,255, .16)"
-                      p={{ b: ".5rem" }}
+                      p={{ b: ".7rem" }}
                       d="inline"
                       textColor="medium"
                     >
                       <Text
                         tag="span"
                         id="individual"
+                        style={{ lineHeight: "24px" }}
                         onClick={this.changePlan}
                         cursor="pointer"
                         textColor={plan === "individual" && content.color}
@@ -90,6 +91,7 @@ export default class HomeDemo extends Component {
                       <Text
                         tag="span"
                         id="team"
+                        style={{ lineHeight: "24px" }}
                         onClick={this.changePlan}
                         textColor={plan === "team" && content.color}
                         cursor="pointer"
@@ -97,7 +99,7 @@ export default class HomeDemo extends Component {
                         Team
                       </Text>
                     </Div>
-                    <Div m={{ t: "1rem", b: { xs: "2.5rem", md: "2rem" } }}>
+                    <Div m={{ t: "1.5rem", b: { xs: "2.5rem", md: "2rem" } }}>
                       <Text
                         tag="span"
                         textSize="display4"
@@ -133,6 +135,7 @@ export default class HomeDemo extends Component {
                           textSize="paragraph"
                           textColor={content.textColor}
                           textWeight="bold"
+                          shadow="6"
                           m={{
                             r: { xs: "0", md: "1rem" },
                             t: { xs: "1rem", md: "0" },
@@ -151,6 +154,7 @@ export default class HomeDemo extends Component {
                           textWeight="bold"
                           rounded="12px"
                           h="auto"
+                          shadow="6"
                         >
                           Try FREE Demo
                         </Button>
@@ -162,7 +166,7 @@ export default class HomeDemo extends Component {
                       textSize="caption"
                       textColor="medium"
                     >
-                      🔒 Secured payment through Gumroad.
+                      🔒Secured payment through Gumroad.
                     </Text>
                   </Div>
                 </Div>
@@ -203,7 +207,7 @@ export default class HomeDemo extends Component {
                           h="1.5rem"
                           w="auto"
                           m={{
-                            r: { xs: "1.125rem", md: "1.625rem" },
+                            r: { xs: "1.125rem", md: "1.5rem" },
                             t: { xs: "3px", md: "5px" },
                           }}
                         />
@@ -223,13 +227,13 @@ export default class HomeDemo extends Component {
 
               <Div
                 textAlign="center"
-                p={{ t: "1.5rem" }}
+                p={{ t: "1.3rem" }}
                 m={{
-                  t: { xs: "2.25rem", md: "1.5rem", xl: "4rem" },
+                  t: { xs: "2.25rem", md: "1.5rem", xl: "3.6rem" },
                   //x: { xs: "-1.75rem", md: "-5rem" },
                 }}
                 border={{ t: "1px solid" }}
-                borderColor="rgba(255,255,255, .16)"
+                borderColor="rgba(255,255,255, .1)"
               >
                 <Text
                   textColor="white"

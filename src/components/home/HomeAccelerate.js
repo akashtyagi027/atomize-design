@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Div, Text, Row, Col, Button, Anchor } from "atomize"
+import { Div, Text, Row, Col, Button, Anchor, Image } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
 
 export default class HomeAccelerate extends Component {
@@ -15,6 +15,7 @@ export default class HomeAccelerate extends Component {
             y: { xs: "4rem", md: "3.5rem", xl: "5.5rem" },
           }}
           shadow="1"
+          className="home-accelerate"
         >
           <Row>
             <Col size={{ xs: "12", md: "6" }} style={{ margin: "auto" }}>
@@ -48,7 +49,14 @@ export default class HomeAccelerate extends Component {
                     hoverBg="#fafbfb"
                     shadow="1"
                   >
-                    See full preview ↗️
+                    See full preview
+                    <Image
+                      src="./images/Arrow.svg"
+                      m={{ l: "5px" }}
+                      h="10px"
+                      w="8px"
+                      className={content.className}
+                    />
                   </Button>
                 </Anchor>
               </Div>
@@ -87,10 +95,10 @@ export default class HomeAccelerate extends Component {
                   pos="absolute"
                   bgImg={content.chatBubble}
                   p={{ b: "30%" }}
-                  w="40%"
+                  w="46%"
                   bottom={{ xs: "-5%", md: "24%", xl: "5%" }}
                   zIndex="1"
-                  right="2%"
+                  right="-2%"
                   bgSize="contain"
                   bgRepeat="no-repeat"
                   bgPos="center"
@@ -103,7 +111,7 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.toggleImage}
                   p={{ b: "10%" }}
                   w="10%"
-                  top={{ xs: "42%", md: "11%", xl: "38%" }}
+                  top={{ xs: "42%", md: "11%", xl: "39%" }}
                   zIndex="1"
                   right="6%"
                   bgSize="contain"
@@ -118,7 +126,7 @@ export default class HomeAccelerate extends Component {
                   bgImg={content.input}
                   p={{ b: "13%" }}
                   zIndex="1"
-                  w="80%"
+                  w="77%"
                   bottom={{ xs: "-1%", md: "20%", xl: "5%" }}
                   left="7%"
                   bgSize="contain"

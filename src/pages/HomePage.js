@@ -58,6 +58,7 @@ const data = {
         "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
       text:
         "your design workflow with ready to use interface elements and file setup.",
+      className: "sketch-arrow",
       buttonColor: "#F07300",
       borderColor: "#FFECC7",
       frameImage: "./images/Sketch/Sketch.svg",
@@ -160,6 +161,7 @@ const data = {
         "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
       text:
         "your design workflow with ready to use interface elements and file setup.",
+      className: "figma-arrow",
       buttonColor: "violet200",
       borderColor: "#ECECFF",
       frameImage: "./images/Figma/Frame.svg",
@@ -231,7 +233,7 @@ export default class HomePage extends Component {
   componentDidMount() {
     const luxy = require("luxy.js")
     luxy.init({
-      wrapperSpeed: "0.9",
+      wrapperSpeed: "1",
     })
   }
 

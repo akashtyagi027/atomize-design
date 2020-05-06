@@ -52,7 +52,8 @@ class Header extends React.Component {
                   textSize="caption"
                   m={{ r: "3rem" }}
                 >
-                  Atomize React↗️
+                  Atomize React{" "}
+                  <Image src="./images/Arrow.svg" h="10px" w="6px" />
                 </Anchor>
                 <Anchor
                   href={content.demoLink}
@@ -75,6 +76,7 @@ class Header extends React.Component {
                     textColor="white"
                     textWeight="bold"
                     rounded="8px"
+                    shadow="1"
                     bg={content.buttonColor}
                   >
                     Buy Now

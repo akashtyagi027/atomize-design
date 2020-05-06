@@ -29,8 +29,9 @@ export default class ToggleComponent extends Component {
               <Button
                 onClick={this.toggle}
                 d="flex"
-                p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
+                p={{ l: "11px", r: id % 2 ? "15px" : "13px", y: ".375rem" }}
                 cursor="pointer"
+                m="0"
                 id={data[info].text}
                 h="2rem"
                 bg="white"

@@ -21,3 +21,15 @@
     }
   }
 }
+
+.home-accelerate {
+  .sketch-arrow {
+    filter: invert(47%) sepia(26%) saturate(5609%) hue-rotate(9deg)
+      brightness(101%) contrast(103%);
+  }
+
+  .figma-arrow {
+    filter: invert(53%) sepia(100%) saturate(7492%) hue-rotate(241deg)
+      brightness(99%) contrast(99%);
+  }
+}

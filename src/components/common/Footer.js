@@ -14,10 +14,11 @@ const footerLinks = [
   },
   {
     heading: "Atomize React",
-    text1: "Github ↗️ ",
+    text1: "Github",
     link1: "https://github.com/proksh/atomize",
-    text2: "Documentation ↗️ ",
+    text2: "Documentation",
     link2: "https://atomizecode.com/docs/react/intro/",
+    arrow: "./images/Arrow.svg",
   },
   {
     heading: "Follow us",
@@ -103,24 +104,34 @@ export default class Footer extends Component {
                         <Text
                           textSize="caption2"
                           textWeight="bold"
-                          m={{ b: "18px" }}
+                          p={{ b: "18px" }}
                         >
                           {links.heading}
                         </Text>
-                        <Anchor
-                          href={links.link1}
-                          target="_blank"
-                          textSize="caption2"
-                          textWeight="600"
-                          opacity=".4"
-                          textColor="black"
-                          hoverTextColor="black"
-                          m={{ b: "10px" }}
-                          d="block"
-                          textDecor="none"
-                        >
-                          {links.text1 ? links.text1 : ""}
-                        </Anchor>
+                        {links.text1 && (
+                          <Anchor
+                            href={links.link1}
+                            target="_blank"
+                            textSize="caption2"
+                            textWeight="600"
+                            opacity=".4"
+                            textColor="black"
+                            hoverTextColor="black"
+                            p={{ b: "10px" }}
+                            d="block"
+                            textDecor="none"
+                          >
+                            {links.text1 ? links.text1 : ""}
+                            {links.arrow && (
+                              <Image
+                                src="./images/Arrow.svg"
+                                h="10px"
+                                p={{ l: "5px" }}
+                                w="8px"
+                              />
+                            )}
+                          </Anchor>
+                        )}
                         <Anchor
                           href={links.link2}
                           target="_blank"
@@ -134,6 +145,14 @@ export default class Footer extends Component {
                           textDecor="none"
                         >
                           {links.text2 ? links.text2 : ""}
+                          {links.arrow && (
+                            <Image
+                              src="./images/Arrow.svg"
+                              p={{ l: "5px" }}
+                              h="10px"
+                              w="8px"
+                            />
+                          )}
                         </Anchor>
                         <Div
                           d={links.icon1 ? "flex" : "none"}
@@ -166,7 +185,7 @@ export default class Footer extends Component {
                 t: { xs: "16px", md: "42px" },
                 b: { xs: "28px", md: "42px" },
               }}
-              textAlign={{ xs: "left", md: "center" }}
+              textAlign="center"
             >
               <Text
                 p={{ l: { xs: "8px", md: "0" } }}

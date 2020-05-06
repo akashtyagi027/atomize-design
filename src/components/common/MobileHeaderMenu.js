@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-scroll"
 
-import { Div, Text, Button, Anchor } from "atomize"
+import { Div, Image, Button, Anchor } from "atomize"
 import { Transition } from "react-transition-group"
 import {
   disableBodyScroll,
@@ -103,16 +103,13 @@ export default class MobileHeaderMenu extends Component {
                   borderColor="lightGray"
                   d="block"
                 >
-                  Atomize React ↗️
-                  {/* <Text
-                    p={{ t: "24px", b: "28px" }}
-                    textDecor="underline"
-                    opacity=".56"
-                    border={{ y: "1px solid" }}
-                    borderColor="lightGray"
-                  >
-                    Atomize React ↗️
-                  </Text> */}
+                  Atomize React
+                  <Image
+                    src="./images/Arrow.svg"
+                    h="10px"
+                    p={{ l: "5px" }}
+                    w="8px"
+                  />
                 </Anchor>
                 <Anchor
                   href={content.demoLink}
@@ -126,14 +123,6 @@ export default class MobileHeaderMenu extends Component {
                   d="block"
                 >
                   TRY DEMO
-                  {/* <Text
-                    p={{ t: "32px", b: "20px" }}
-                    border={{ b: "1px solid" }}
-                    borderColor="lightGray"
-                    textColor={content.textColor}
-                  >
-                    TRY DEMO
-                  </Text> */}
                 </Anchor>
                 <Div p={{ t: "32px", b: "52px" }}>
                   <Link
