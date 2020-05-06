@@ -77,7 +77,7 @@ export default class HomeAccelerate extends Component {
                 bgPos="center"
                 pos="relative"
               >
-                <Div
+                {/* <Div
                   pos="absolute"
                   bgImg={content.frameImage}
                   p={{ b: "60%" }}
@@ -90,7 +90,21 @@ export default class HomeAccelerate extends Component {
                   className="luxy-el"
                   data-speed-y="-7"
                   data-offset="120"
-                ></Div>
+                ></Div> */}
+                <Image
+                  pos="absolute"
+                  src={content.frameImage}
+                  //h="60%"
+                  w="80%"
+                  top={{ xs: "35%", md: "10%", xl: "25%" }}
+                  left="4%"
+                  // bgSize="contain"
+                  // bgRepeat="no-repeat"
+                  //bgPos="center"
+                  className="luxy-el"
+                  data-speed-y="-7"
+                  data-offset="120"
+                />
                 <Div
                   pos="absolute"
                   bgImg={content.chatBubble}
