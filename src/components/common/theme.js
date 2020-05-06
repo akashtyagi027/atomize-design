@@ -26,7 +26,7 @@ const theme = {
       subheader2: "40px",
       subheader4: "48px",
       display2: "56px",
-      display4: "88px",
+      display4: "64px",
     },
   },
 
