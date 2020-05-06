@@ -57,7 +57,7 @@ export default class HomeHero extends Component {
                   maxW="960px"
                   m={{
                     t: { xs: "2.5rem", md: "3.5rem" },
-                    b: { xs: "4.375rem", md: "5.75rem" },
+                    b: { xs: "4.375rem", md: "4.5rem" },
                     x: "auto",
                   }}
                   p={{
@@ -134,6 +134,7 @@ export default class HomeHero extends Component {
                       <Div
                         m={{ l: { xs: "2rem", md: "1.75rem", xl: "2rem" } }}
                         textSize={{ xs: "caption3", md: "caption" }}
+                        maxW={{ xs: "16rem", md: "100%" }}
                       >
                         <Text tag="span" textWeight="bold" textColor="#000">
                           {data.heading} -{" "}

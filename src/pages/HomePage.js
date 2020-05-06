@@ -32,7 +32,7 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/Sketch-hero.png",
+      image: "./images/Sketch/Sketch.png",
       heroPoints: [
         {
           image: "./images/icons/Modular.svg",
@@ -74,17 +74,17 @@ const data = {
         {
           heading: "Style Guide",
           text: "2 Styleguide layout options.",
-          image: "./images/guide.png",
+          image: "./images/Sketch/W2.png",
         },
         {
           heading: "UI components",
           text: "Buttons, Avatars, Inputs, Lists and more.",
-          image: "./images/components.png",
+          image: "./images/Sketch/W1.png",
         },
         {
           heading: "Theme Setup",
           text: "Colors, Shadows and Type system.",
-          image: "./images/theme.png",
+          image: "./images/Sketch/W3.png",
         },
       ],
     },
@@ -134,7 +134,7 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/Figma-hero.png",
+      image: "./images/Figma/Figma.png",
       heroPoints: [
         {
           image: "./images/icons/Modular.svg",
@@ -176,17 +176,17 @@ const data = {
         {
           heading: "Style Guide",
           text: "2 Styleguide layout options.",
-          image: "./images/guide.png",
+          image: "./images/Figma/W1.png",
         },
         {
           heading: "UI components",
           text: "Buttons, Avatars, Inputs, Lists and more.",
-          image: "./images/components.png",
+          image: "./images/Figma/W2.png",
         },
         {
           heading: "Theme Setup",
           text: "Colors, Shadows and Type system.",
-          image: "./images/theme.png",
+          image: "./images/Figma/W3.png",
         },
       ],
     },
@@ -250,7 +250,7 @@ export default class HomePage extends Component {
             data={toggleData}
             activeToggle={activeToggle}
           />
-          <Div m={{ t: "3rem" }}>
+          <Div m={{ t: { xs: "2rem", md: "3rem" } }}>
             <HomeHero content={data[activeToggle].heroSection} />
           </Div>
           <Div
@@ -269,7 +269,7 @@ export default class HomePage extends Component {
           </Div>
           <Div
             m={{
-              t: { xs: "4rem", md: "5rem", xl: "9.75rem" },
+              t: { xs: "4rem", md: "5rem", xl: "10.5rem" },
               b: "5.5rem",
             }}
           >

@@ -32,7 +32,10 @@ export default class HomeAccelerate extends Component {
                 </Div>
                 <Anchor href={content.previewLink} target="_blank">
                   <Button
-                    m={{ t: "3.5rem", x: { xs: "auto", md: "0" } }}
+                    m={{
+                      t: { xs: "2rem", md: "3.5rem" },
+                      x: { xs: "auto", md: "0" },
+                    }}
                     rounded="12px"
                     p={{ y: ".875rem", x: "1.75rem" }}
                     h="3.5rem"

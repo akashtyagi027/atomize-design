@@ -19,7 +19,7 @@ export default class HomeDemo extends Component {
         <CustomContainer p={{ x: { xs: ".75rem", md: "1.5rem", xl: "7rem" } }}>
           <Div
             className="home-demo"
-            p={{ t: { xs: "4rem", md: "3.125rem" } }}
+            p={{ t: { xs: "4rem", md: "2.5rem" } }}
             border={{ t: "1px solid" }}
             borderColor="lightGray"
             id="home-demo"
@@ -29,7 +29,7 @@ export default class HomeDemo extends Component {
               textSize={{ xs: "subheader1", xl: "subheader2" }}
               textWeight="bold"
               opacity=".56"
-              maxW="43rem"
+              maxW={{ xs: "20.5rem", md: "43rem" }}
               m="auto"
             >
               {content.heading}

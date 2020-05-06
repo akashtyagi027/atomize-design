@@ -34,7 +34,9 @@ export default class HomeInside extends Component {
               justify="space-between"
               flexDir={{ xs: "column", md: "row" }}
               textAlign={{ xs: "center", md: "left" }}
-              p={{ x: { xs: "28px", md: "0" } }}
+              // p={{ x: { xs: "28px", md: "0" } }}
+              maxW={{ xs: "18.5rem", md: "100%" }}
+              m="auto"
             >
               <Text
                 textSize={{ xs: "subheader2", xl: "display2" }}
@@ -75,9 +77,10 @@ export default class HomeInside extends Component {
                     }}
                     shadow="1"
                     p={{
-                      x: "2rem",
-                      t: { xs: "2rem", md: "22px", xl: "2.5rem" },
-                      b: { xs: "3rem", md: "22px", xl: "2.125rem" },
+                      l: { xs: "2rem", md: "2.5rem" },
+                      r: "2rem",
+                      t: { xs: "2rem", md: "1.375rem", xl: "2.5rem" },
+                      b: { xs: "1.625rem", md: "1.375rem", xl: "2.125rem" },
                     }}
                   >
                     <Div flexGrow="1 1 60%" p={{ t: { md: "20px", xl: "0" } }}>
@@ -97,7 +100,7 @@ export default class HomeInside extends Component {
                       bgImg={card.image}
                       flexGrow="1 1 30%"
                       p={{ b: { xs: "67%", md: "22%", xl: "67%" } }}
-                      //w="288px"
+                      transition="all .3s ease-in-out"
                       bgSize="contain"
                       bgRepeat="no-repeat"
                       bgPos="center"
