@@ -104,7 +104,7 @@ export default class Footer extends Component {
                         <Text
                           textSize="caption2"
                           textWeight="bold"
-                          p={{ b: "18px" }}
+                          m={{ b: "16px" }}
                         >
                           {links.heading}
                         </Text>
@@ -117,7 +117,7 @@ export default class Footer extends Component {
                             opacity=".4"
                             textColor="black"
                             hoverTextColor="black"
-                            p={{ b: "10px" }}
+                            m={{ b: "8px" }}
                             d="block"
                             textDecor="none"
                           >
