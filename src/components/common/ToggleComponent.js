@@ -53,33 +53,6 @@ export default class ToggleComponent extends Component {
             </Div>
           )
         })}
-        {/* {info.map((button, id) => {
-          return (
-            // <Button
-            //   key={id}
-            //   d="flex"
-            //   p={{ l: ".625rem", r: ".8rem", y: ".375rem" }}
-            //   cursor="pointer"
-            //   id={button.text}
-            //   h="2rem"
-            //   onClick={e => this.toggle(e, button.text)}
-            //   bg="white"
-            //   textSize="caption"
-            //   textWeight="bold"
-            //   className={active === button.text ? "active" : "btn-toggle"}
-            //   prefix={
-            //     <Image
-            //       m={{ r: ".5rem" }}
-            //       src={button.image}
-            //       h="20px"
-            //       w="auto"
-            //     />
-            //   }
-            // >
-            //   {button.text}
-            // </Button>
-          )
-        })} */}
       </Div>
     )
   }
