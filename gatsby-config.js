@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Atomize Design System`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `The most advanced UI design framework for Sketch and Figma`,
     author: `@akashtyagi`,
   },
   plugins: [
