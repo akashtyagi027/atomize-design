@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           />
           <meta
             name="keywords"
-            content="Atomize, Design System for Sketch, Design System for Figma, UI design, Nested Symbol, Sketchapp, Styleguide"
+            content="Atomize, Design System for Sketch and Figma, UI design, Nested Symbol, Sketchapp, Styleguide"
           />
 
           <meta
