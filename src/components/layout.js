@@ -25,11 +25,11 @@ const Layout = ({ children }) => {
           <meta name="author" content="Atomize" />
           <meta
             name="description"
-            content="The most advanced UI design framework for Sketch"
+            content="The most advanced UI design framework for Sketch and Figma"
           />
           <meta
             name="keywords"
-            content="Atomize, Design System for Sketch, UI design, Nested Symbol, Sketchapp, Styleguide"
+            content="Atomize, Design System for Sketch, Design System for Figma, UI design, Nested Symbol, Sketchapp, Styleguide"
           />
 
           <meta
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
           <meta name="twitter:title" content="Atomize Design System" />
           <meta
             name="twitter:description"
-            content="The most advanced UI design framework for Sketch"
+            content="The most advanced UI design framework for Sketch and Figma"
           />
           <meta name="twitter:creator" content="@atomize_design" />
           <meta name="twitter:image" content="/images/twitter-image.png" />
@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
           <meta property="og:image" content="/images/Meta.png" />
           <meta
             property="og:description"
-            content="The most advanced UI design framework for Sketch"
+            content="The most advanced UI design framework for Sketch and Figma"
           />
           <meta property="og:site_name" content="Atomize" />
           <meta property="fb:app_id" content="1887338054890731" />
