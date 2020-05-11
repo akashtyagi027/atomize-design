@@ -55,7 +55,7 @@ const data = {
     homeAccelerate: {
       heading: "Accelerate",
       previewLink:
-        "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
+        "https://www.sketch.com/s/a0879546-808a-49bd-94d3-29c09216b60c",
       text:
         "your design workflow with ready to use interface elements and file setup.",
       className: "sketch-arrow",
@@ -157,8 +157,7 @@ const data = {
 
     homeAccelerate: {
       heading: "Accelerate",
-      previewLink:
-        "https://dribbble.com/akashtyagi/projects/1843932-Atomize-Design-System",
+      previewLink: "https://bit.ly/2XTIXoL",
       text:
         "your design workflow with ready to use interface elements and file setup.",
       className: "figma-arrow",
