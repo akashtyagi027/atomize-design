@@ -55,7 +55,7 @@ const data = {
     homeAccelerate: {
       heading: "Accelerate",
       previewLink:
-        "https://www.sketch.com/s/a0879546-808a-49bd-94d3-29c09216b60c",
+        "https://www.sketch.com/s/d998aa01-2d96-4e80-93fb-598de671a400",
       text:
         "your design workflow with ready to use interface elements and file setup.",
       className: "sketch-arrow",
