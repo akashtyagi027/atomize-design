@@ -28,8 +28,7 @@ const Layout = ({ children }) => {
             content="The most advanced UI design framework for Sketch and Figma"
           />
 
-          {/* Open Graph / Facebook */}
-
+          {/* <!-- Open Graph / Facebook -- /> */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://atomizedesign.com/" />
           <meta property="og:title" content="Atomize Design System" />
@@ -37,9 +36,9 @@ const Layout = ({ children }) => {
             property="og:description"
             content="The most advanced UI design framework for Sketch and Figma"
           />
-
-          {/* <!-- Twitter --> */}
           <meta property="og:image" content="/images/meta.png" />
+
+          {/* <!-- Twitter -- /> */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://atomizedesign.com/" />
           <meta property="twitter:title" content="Atomize Design System" />
@@ -48,22 +47,10 @@ const Layout = ({ children }) => {
             content="The most advanced UI design framework for Sketch and Figma"
           />
           <meta property="twitter:image" content="/images/meta.png"></meta>
+
           {/* Robots */}
           <meta name="robots" content="noimageindex" />
-          {/* <!-- Hotjar Tracking Code for http://atomizedesign.com/ --> */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `"use strict";
-              (function(h,o,t,j,a,r){
-                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}
-                  h._hjSettings={hjid:1808029,hjsv:6};
-                  a=o.getElementsByTagName('head')[0];
-                  r=o.createElement('script');r.async=1;
-                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                  a.appendChild(r);
-              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-            }}
-          ></script>
+
           {/* Google Analytics */}
           <script
             type="text/javascript"
@@ -88,6 +75,7 @@ const Layout = ({ children }) => {
 		  gtag('config', 'UA-119531355-1');`,
             }}
           />
+
           {/* Drift Code */}
           <script
             dangerouslySetInnerHTML={{
@@ -117,6 +105,7 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('vb4hrvsd8kfv');`,
             }}
           />
+
           <script
             type="text/javascript"
             dangerouslySetInnerHTML={{
