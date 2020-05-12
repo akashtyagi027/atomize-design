@@ -22,47 +22,48 @@ const Layout = ({ children }) => {
         <StyleReset />
         <Helmet defer={false}>
           <title>Atomize Design System</title>
-          <meta name="author" content="Atomize" />
+          <meta name="title" content="Atomize Design System" />
           <meta
             name="description"
             content="The most advanced UI design framework for Sketch and Figma"
           />
-          <meta
-            name="keywords"
-            content="Atomize, Design System for Sketch and Figma, UI design, Nested Symbol, Sketchapp, Styleguide"
-          />
 
-          <meta
-            http-equiv="Content-Type"
-            content="text/html; charset=windows-1252"
-          />
+          {/* Open Graph / Facebook */}
 
-          {/* Robots */}
-          <meta name="robots" content="noimageindex" />
-
-          {/* Twitter Card data */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@atomize_design" />
-          <meta name="twitter:title" content="Atomize Design System" />
-          <meta
-            name="twitter:description"
-            content="The most advanced UI design framework for Sketch and Figma"
-          />
-          <meta name="twitter:creator" content="@atomize_design" />
-          <meta name="twitter:image" content="/images/twitter-image.png" />
-
-          {/* Open Graph data */}
-          <meta property="og:title" content="Atomize Design System" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="http://www.atomizedesign.com/" />
-          <meta property="og:image" content="/images/Meta.png" />
+          <meta property="og:url" content="https://atomizedesign.com/" />
+          <meta property="og:title" content="Atomize Design System" />
           <meta
             property="og:description"
             content="The most advanced UI design framework for Sketch and Figma"
           />
-          <meta property="og:site_name" content="Atomize" />
-          <meta property="fb:app_id" content="1887338054890731" />
 
+          {/* <!-- Twitter --> */}
+          <meta property="og:image" content="/images/meta.png" />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://atomizedesign.com/" />
+          <meta property="twitter:title" content="Atomize Design System" />
+          <meta
+            property="twitter:description"
+            content="The most advanced UI design framework for Sketch and Figma"
+          />
+          <meta property="twitter:image" content="/images/meta.png"></meta>
+          {/* Robots */}
+          <meta name="robots" content="noimageindex" />
+          {/* <!-- Hotjar Tracking Code for http://atomizedesign.com/ --> */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `"use strict";
+              (function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}
+                  h._hjSettings={hjid:1808029,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+            }}
+          ></script>
           {/* Google Analytics */}
           <script
             type="text/javascript"
@@ -87,7 +88,6 @@ const Layout = ({ children }) => {
 		  gtag('config', 'UA-119531355-1');`,
             }}
           />
-
           {/* Drift Code */}
           <script
             dangerouslySetInnerHTML={{
@@ -117,7 +117,6 @@ drift.SNIPPET_VERSION = '0.3.1';
 drift.load('vb4hrvsd8kfv');`,
             }}
           />
-
           <script
             type="text/javascript"
             dangerouslySetInnerHTML={{
