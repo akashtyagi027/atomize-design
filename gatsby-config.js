@@ -1,9 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: `Atomize Design System`,
-    description: `The most advanced UI design framework for Sketch and Figma`,
-    author: `@akashtyagi`,
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
