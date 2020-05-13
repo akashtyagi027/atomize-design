@@ -3,28 +3,6 @@ import { Div, Text, Image } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
 import CustomContainer from "../common/CustomContainer"
 
-import Modular from "../../images/icons/modular.svg"
-import Customizable from "../../images/icons/customizable.svg"
-import Scalable from "../../images/icons/scalable.svg"
-
-const heroPoints = [
-  {
-    image: Modular,
-    heading: "Modular",
-    text: "Combine symbols to create multiple UI components",
-  },
-  {
-    image: Customizable,
-    heading: "Customizable",
-    text: "Shared styles and Symbols can be customized easily.",
-  },
-  {
-    image: Scalable,
-    heading: "Scalable",
-    text: "Quickly scale your design while maintaining consistency",
-  },
-]
-
 export default class HomeHero extends Component {
   render() {
     const { content } = this.props
@@ -34,7 +12,7 @@ export default class HomeHero extends Component {
           <Div textAlign="center" className="home-hero">
             <Div>
               <Text
-                className="horo-heading"
+                className="hero-heading"
                 textWeight="bold"
                 textSize={{ xs: "subheader4", md: "display2", xl: "display4" }}
                 m={{ b: { xs: "1.5rem", md: "1rem" } }}
