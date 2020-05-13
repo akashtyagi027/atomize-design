@@ -26,7 +26,10 @@ export default function HTML(props) {
           property="og:description"
           content="The most advanced UI design framework for Sketch and Figma"
         />
-        <meta property="og:image" content="/images/meta.png" />
+        <meta
+          property="og:image"
+          content="https://atomizedesign.com/images/meta.png"
+        />
 
         {/* <!-- Twitter -- /> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -36,7 +39,10 @@ export default function HTML(props) {
           property="twitter:description"
           content="The most advanced UI design framework for Sketch and Figma"
         />
-        <meta property="twitter:image" content="/images/meta.png"></meta>
+        <meta
+          property="twitter:image"
+          content="https://atomizedesign.com/images/meta.png"
+        ></meta>
 
         {/* Robots */}
         <meta name="robots" content="noimageindex" />
