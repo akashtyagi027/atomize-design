@@ -70,7 +70,7 @@ export default class HomeAccelerate extends Component {
               // }}
             >
               <Div
-                bgImg="./images/Ellipse.png"
+                bgImg="./images/ellipse.png"
                 p={{ b: "100%" }}
                 m={{ t: { xs: "4.5rem", md: "0" } }}
                 bgSize="cover"

@@ -3,10 +3,9 @@ import { Div, Text, Image } from "atomize"
 import WebsiteContainer from "../common/WebsiteContainer"
 import CustomContainer from "../common/CustomContainer"
 
-import heroImage from "../../images/homeHero.png"
-import Modular from "../../images/icons/Modular.svg"
-import Customizable from "../../images/icons/Customizable.svg"
-import Scalable from "../../images/icons/Scalable.svg"
+import Modular from "../../images/icons/modular.svg"
+import Customizable from "../../images/icons/customizable.svg"
+import Scalable from "../../images/icons/scalable.svg"
 
 const heroPoints = [
   {

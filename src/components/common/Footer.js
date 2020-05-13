@@ -22,9 +22,9 @@ const footerLinks = [
   },
   {
     heading: "Follow us",
-    icon1: "./images/Twitter.svg",
+    icon1: "./images/twitter.svg",
     iconLink1: "https://twitter.com/atomize_design",
-    icon2: "./images/Fb.svg",
+    icon2: "./images/fb.svg",
     iconLink2: "https://www.facebook.com/atomizedesign/",
   },
 ]

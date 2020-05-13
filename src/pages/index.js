@@ -77,7 +77,7 @@ const toggleData = {
     text: "Sketch",
   },
   Figma: {
-    image: "./images/icons/Figma.svg",
+    image: "./images/icons/figma.svg",
     text: "Figma",
   },
 }
@@ -85,7 +85,7 @@ const toggleData = {
 const data = {
   Sketch: {
     header: {
-      logo: "./images/Atomize-sketch.svg",
+      logo: "./images/atomize-sketch.svg",
       textColor: "#F07300",
       buttonColor: "#FF8F00",
       demoLink: "https://gumroad.com/l/atomize-demo",
@@ -94,20 +94,20 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/Sketch/Sketch.png",
+      image: "./images/sketch/sketch.png",
       heroPoints: [
         {
-          image: "./images/icons/Modular.svg",
+          image: "./images/icons/modular.svg",
           heading: "Modular",
           text: "Combine symbols to create multiple UI components",
         },
         {
-          image: "./images/icons/Customizable.svg",
+          image: "./images/icons/customizable.svg",
           heading: "Customizable",
           text: "Shared styles and Symbols can be customized easily.",
         },
         {
-          image: "./images/icons/Scalable.svg",
+          image: "./images/icons/scalable.svg",
           heading: "Scalable",
           text: "Quickly scale your design while maintaining consistency",
         },
@@ -123,10 +123,10 @@ const data = {
       className: "sketch-arrow",
       buttonColor: "#F07300",
       borderColor: "#FFECC7",
-      frameImage: "./images/Sketch/Sketch.svg",
-      chatBubble: "./images/Sketch/Point-Up-Left.svg",
-      toggleImage: "./images/Sketch/Switch-On.svg",
-      input: "./images/Sketch/Right-Icon.svg",
+      frameImage: "./images/sketch/sketch.svg",
+      chatBubble: "./images/sketch/point-up-left.svg",
+      toggleImage: "./images/sketch/switch-on.svg",
+      input: "./images/sketch/right-icon.svg",
     },
 
     homeInside: {
@@ -137,17 +137,17 @@ const data = {
         {
           heading: "Style Guide",
           text: "2 Styleguide layout options.",
-          image: "./images/Sketch/W2.png",
+          image: "./images/sketch/w2.png",
         },
         {
           heading: "UI components",
           text: "Buttons, Avatars, Inputs, Lists and more.",
-          image: "./images/Sketch/W1.png",
+          image: "./images/sketch/w1.png",
         },
         {
           heading: "Theme Setup",
           text: "Colors, Shadows and Type system.",
-          image: "./images/Sketch/W3.png",
+          image: "./images/sketch/w3.png",
         },
       ],
     },
@@ -162,23 +162,23 @@ const data = {
       purchaseLink: "https://gumroad.com/l/atomize",
       points: [
         {
-          image: "./images/Success-2.svg",
+          image: "./images/success-2.svg",
           text: "FREE future updates",
         },
         {
-          image: "./images/Success-2.svg",
+          image: "./images/success-2.svg",
           text: "Themes: Light/Dark/Combo",
         },
         {
-          image: "./images/Success-2.svg",
+          image: "./images/success-2.svg",
           text: "Auto-updating Style Guide",
         },
         {
-          image: "./images/Success-2.svg",
+          image: "./images/success-2.svg",
           text: "UI components",
         },
         {
-          image: "./images/Success-2.svg",
+          image: "./images/success-2.svg",
           text: "Theme Setup and Type system",
         },
       ],
@@ -187,7 +187,7 @@ const data = {
 
   Figma: {
     header: {
-      logo: "./images/Atomize-figma.svg",
+      logo: "./images/atomize-figma.svg",
       textColor: "violet200",
       buttonColor: "violet100",
       demoLink: "https://gumroad.com/l/atomizefigmademo",
@@ -197,20 +197,20 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/Figma/Figma.png",
+      image: "./images/figma/figma.png",
       heroPoints: [
         {
-          image: "./images/icons/Modular.svg",
+          image: "./images/icons/modular.svg",
           heading: "Modular",
           text: "Combine symbols to create multiple UI components",
         },
         {
-          image: "./images/icons/Customizable.svg",
+          image: "./images/icons/customizable.svg",
           heading: "Customizable",
           text: "Shared styles and Symbols can be customized easily.",
         },
         {
-          image: "./images/icons/Scalable.svg",
+          image: "./images/icons/scalable.svg",
           heading: "Scalable",
           text: "Quickly scale your design while maintaining consistency",
         },
@@ -225,10 +225,10 @@ const data = {
       className: "figma-arrow",
       buttonColor: "violet200",
       borderColor: "#ECECFF",
-      frameImage: "./images/Figma/Frame.svg",
-      chatBubble: "./images/Figma/Point-Up-Left.svg",
-      toggleImage: "./images/Figma/Switch-On.svg",
-      input: "./images/Figma/Right-Icon.svg",
+      frameImage: "./images/figma/frame.svg",
+      chatBubble: "./images/figma/point-up-left.svg",
+      toggleImage: "./images/figma/switch-on.svg",
+      input: "./images/figma/right-icon.svg",
     },
 
     homeInside: {
@@ -239,17 +239,17 @@ const data = {
         {
           heading: "Style Guide",
           text: "2 Styleguide layout options.",
-          image: "./images/Figma/W1.png",
+          image: "./images/figma/w1.png",
         },
         {
           heading: "UI components",
           text: "Buttons, Avatars, Inputs, Lists and more.",
-          image: "./images/Figma/W2.png",
+          image: "./images/figma/w2.png",
         },
         {
           heading: "Theme Setup",
           text: "Colors, Shadows and Type system.",
-          image: "./images/Figma/W3.png",
+          image: "./images/figma/w3.png",
         },
       ],
     },
@@ -264,23 +264,23 @@ const data = {
       purchaseLink: "https://gumroad.com/l/atomizefigma",
       points: [
         {
-          image: "./images/Success.svg",
+          image: "./images/success.svg",
           text: "FREE future updates",
         },
         {
-          image: "./images/Success.svg",
+          image: "./images/success.svg",
           text: "Auto-updating Style Guide",
         },
         {
-          image: "./images/Success.svg",
+          image: "./images/success.svg",
           text: "UI components",
         },
         {
-          image: "./images/Success.svg",
+          image: "./images/success.svg",
           text: "Theme Setup and Type system",
         },
         {
-          image: "./images/Success.svg",
+          image: "./images/success.svg",
           text: "Example screens (Coming soon)",
         },
       ],
