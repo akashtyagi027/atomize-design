@@ -94,7 +94,7 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/sketch/sketch.png",
+      image: "./images/sketch/sketch-1.png",
       heroPoints: [
         {
           image: "./images/icons/modular.svg",
@@ -197,7 +197,7 @@ const data = {
       heading: "Design interfaces at Scale",
       subHeading:
         "Atomize Design System is the most advanced UI design framework that helps designers create beautiful and consistent user interfaces for the web.",
-      image: "./images/figma/figma.png",
+      image: "./images/figma/figma-1.png",
       heroPoints: [
         {
           image: "./images/icons/modular.svg",
